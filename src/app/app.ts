@@ -7,6 +7,7 @@ import { DataService, Map, Game, GameType } from '../dataService';
     template: require('./app.html')
 })
 export class AppComponent {
+    static $inject = ['dataService']
     constructor(
         private dataService: DataService
     ) {
@@ -22,7 +23,20 @@ export class AppComponent {
 
     public generatedMaps: Map[];
 
-    public mapCount = 3;
+    public showAll() {
+        var maps = [];
+        for (var map of this.selectedGame.maps) {
+            if (this.selectedGameType.mapNames.indexOf(map.name) > -1) {
+                maps.push(map);
+            }
+        }
+        this.generatedMaps = maps;
+    }
+
+    public reset() {
+        this.selectedGame = undefined;
+        this.selectedGameType = undefined;
+    }
 
     public generateMaps() {
         if (!this.selectedGameType) {
@@ -32,10 +46,18 @@ export class AppComponent {
         var maps = <Map[]>[];
         var iteration = 0;
         for (var i = 0; i < 10000; i++) {
-            var idx = this.getRandomInt(0, this.selectedGameType.maps.length - 1);
+            var idx = this.getRandomInt(0, this.selectedGameType.mapNames.length - 1);
             if (indexes.indexOf(idx) === -1) {
                 indexes.push(idx);
-                maps.push(this.selectedGame.maps[idx]);
+                let mapName = this.selectedGameType.mapNames[idx];
+                let map = this.selectedGame.maps.filter(x => x.name === mapName)[0];
+                if (!map) {
+                    map = {
+                        name: mapName,
+                        portraitUrl: null
+                    };
+                }
+                maps.push(map);
             }
             if (maps.length >= this.mapCount) {
                 break;

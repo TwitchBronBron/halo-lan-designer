@@ -1,29 +1,33 @@
-<h1>Halo Map Picker</h1>
-Map Count: <input type="number" id="mapCount" ng-model="vm.mapCount"/>
-<div>1. Pick a game:</div>
-
-<label ng-repeat="
-    game in vm.games" ng-click="vm.selectedGameType=null">
-<input type="radio" name="game" ng-model="vm.selectedGame" ng-value="game">&nbsp;{{game.name}}
-</label>
-<br />
-<br />
-<div ng-if="vm.selectedGame">
-    <div>2. Pick a game type:</div>
-    <div>
-        <label ng-repeat="gameType in vm.selectedGame.gameTypes">
-            <input type="radio" name="gameType" ng-model="vm.selectedGameType" ng-change="vm.generateMaps()" ng-value="gameType">&nbsp;{{gameType.name}}
-        </label>
-    </div>
+<div class="title-bar">
+    Halo Map Picker
 </div>
-<br />
-<div ng-if="vm.selectedGame && vm.selectedGameType">
-    <button ng-click="vm.generateMaps()">Generate</button>
-    <div ng-if="vm.generatedMaps">
-        <div class="map" ng-repeat="map in vm.generatedMaps">
-            <span class="title">{{map.name}}</span>
-            <div class="image-container">
-                <img ng-src="{{map.url}}" />
+<div class="content">
+    <div class="selected-game-landscape" ng-if="vm.selectedGame" ng-click="vm.reset()">
+        <img ng-src="{{vm.selectedGame.landscapeUrl}}" />
+    </div>
+    <div class="game-container" ng-if="!vm.selectedGame">
+        <h3 ng-if="!vm.selectedGame">Pick a Game</h3>
+        <div class="game" ng-class="{selected: game === vm.selectedGame}" ng-repeat="game in vm.games" ng-click="vm.selectedGame = game">
+            <span class="name">{{game.name}}</span>
+            <img ng-src="{{game.portraitUrl}}" />
+        </div>
+    </div>
+    <div ng-if="vm.selectedGame">
+        <h3>Pick a Game Type</h3>
+        <div ng-repeat="gameType in vm.selectedGame.gameTypes">
+            <input type="radio" name="gameType" ng-model="vm.selectedGameType" ng-change="vm.generateMaps()" ng-value="gameType">&nbsp;{{gameType.name}}
+        </div>
+    </div>
+    <br />
+    <div ng-if="vm.selectedGame && vm.selectedGameType">
+        <button ng-click="vm.generateMaps()">Randomize</button>
+        <button ng-click="vm.showAll()">Show Alphabetical</button>
+        <div ng-if="vm.generatedMaps">
+            <div class="map" ng-repeat="map in vm.generatedMaps">
+                <span class="title">{{map.name}}</span>
+                <div class="image-container">
+                    <img ng-src="{{map.url}}" />
+                </div>
             </div>
         </div>
     </div>
