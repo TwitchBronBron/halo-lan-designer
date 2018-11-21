@@ -3,11 +3,6 @@ import { Injectable } from 'angular-ts-decorators';
 @Injectable('dataService')
 export class DataService {
     constructor() {
-        //copy the maps from halo 2 -> halo 2 anniversary
-        var halo2 = this.games[1];
-        var halo2A = this.games[2];
-        halo2A.maps = halo2.maps;
-
         for (let game of this.games) {
             game.gameTypes = game.gameTypes ? game.gameTypes : [];
             game.gameTypes.splice(0, 0, {
@@ -152,6 +147,9 @@ export class DataService {
                     name: 'Desolation',
                     url: require('../images/Halo 2/Desolation.jpg')
                 }, {
+                    name: 'District',
+                    url: require('../images/Halo 2/District.jpg')
+                }, {
                     name: 'Elongation',
                     url: require('../images/Halo 2/Elongation.jpg')
                 }, {
@@ -188,6 +186,9 @@ export class DataService {
                     name: 'Turf',
                     url: require('../images/Halo 2/Turf.jpg')
                 }, {
+                    name: 'Uplift',
+                    url: require('../images/Halo 2/Uplift.jpg')
+                }, {
                     name: 'Warlock',
                     url: require('../images/Halo 2/Warlock.jpg')
                 }, {
@@ -214,12 +215,56 @@ export class DataService {
             }, {
                 name: 'King of the Hill',
                 mapNames: ['Zenith', 'Lockdown', 'Shrine']
-            }]
+            }],
+            maps: [
+                {
+                    name: 'Lockdown',
+                    url: require('../images/Halo 2A/Lockdown.jpg')
+                }, {
+                    name: 'Zenith',
+                    url: require('../images/Halo 2A/Zenith.jpg')
+                },
+                {
+                    name: 'Stonetown',
+                    url: require('../images/Halo 2A/Stonetown.jpg')
+                },
+                {
+                    name: 'Bloodline',
+                    url: require('../images/Halo 2A/Bloodline.jpg')
+                }, {
+                    name: 'Warlord',
+                    url: require('../images/Halo 2A/Warlord.jpg')
+                },
+                {
+                    name: 'Shrine',
+                    url: require('../images/Halo 2A/Shrine.jpg')
+                },
+                {
+                    name: 'Remnant',
+                    url: require('../images/Halo 2A/Remnant.jpg')
+                }
+            ]
         },
         {
             name: 'Halo 3',
             portraitUrl: require('../images/covers/Halo 3 portrait.jpg'),
             landscapeUrl: require('../images/covers/Halo 3 landscape.jpg'),
+            gameTypes: [{
+                name: 'Slayer (Team & Slayer Duel)',
+                mapNames: ['Cold Storage', 'Epitaph', 'Construct', 'Narrows', 'Heretic', 'Assembly', 'Sandtrap']
+            }, {
+                name: 'Capture the Flag',
+                mapNames: ['Citadel', 'The Pit', 'Narrows', 'Snowbound', 'High Ground', 'Last Resort', 'Valhalla']
+            }, {
+                name: 'King of the Hill',
+                mapNames: ['Construct', 'Guardian', 'Citadel', 'Snowbound', 'The Pit', 'Blackout', 'Isolation']
+            }, {
+                name: 'Oddball',
+                mapNames: ['Guardian', 'Heretic', 'The Pit', 'Assembly', 'Blackout', 'Citadel', 'Ghost Town']
+            }, {
+                name: 'Infection',
+                mapNames: ['Epitaph', 'Cold Storage', 'Guardian', 'Isolation', 'Ghost Town', 'Last Resort', 'Vahalla']
+            }],
             maps: [
                 {
                     name: 'Assembly',
@@ -300,7 +345,97 @@ export class DataService {
             name: 'Halo 4',
             portraitUrl: require('../images/covers/Halo 4 portrait.jpg'),
             landscapeUrl: require('../images/covers/Halo 4 landscape.jpg'),
-            maps: []
+            gameTypes: [{
+                name: 'Slayer (FFA & Team)',
+                mapNames: ['Adrift', 'Haven', 'Impact', 'Skyline', 'Abandon', 'Solace', 'Complex', 'Exile']
+            }, {
+                name: 'Capture the Flag',
+                mapNames: ['Haven', 'Pitfall', 'Adrift', 'Harvest', 'Longbow', 'Exile', 'Meltdown', 'Ragnarok']
+            }, {
+                name: 'King of the Hill',
+                mapNames: ['Pitfall', 'Adrift', 'Impact', 'Monolith', 'Complex', 'Wreckage', 'Vertigo']
+            }, {
+                name: 'Flood',
+                mapNames: ['Abandon', 'Solace', 'Daybreak', 'Complex', 'Perdition']
+            }],
+            maps: [
+                {
+                    name: 'Abandon',
+                    url: require('../images/Halo 4/Abandon.jpg')
+                }, {
+                    name: 'Adrift',
+                    url: require('../images/Halo 4/Adrift.jpg')
+                }, {
+                    name: 'Complex',
+                    url: require('../images/Halo 4/Complex.jpg')
+                }, {
+                    name: 'Daybreak',
+                    url: require('../images/Halo 4/Daybreak.jpg')
+                }, {
+                    name: 'Erosion',
+                    url: require('../images/Halo 4/Erosion.jpg')
+                }, {
+                    name: 'Exile',
+                    url: require('../images/Halo 4/Exile.jpg')
+                }, {
+                    name: 'Forge Island',
+                    url: require('../images/Halo 4/Forge Island.jpg')
+                }, {
+                    name: 'Harvest',
+                    url: require('../images/Halo 4/Harvest.jpg')
+                }, {
+                    name: 'Haven',
+                    url: require('../images/Halo 4/Haven.jpg')
+                }, {
+                    name: 'Impact',
+                    url: require('../images/Halo 4/Impact.jpg')
+                }, {
+                    name: 'Landfall',
+                    url: require('../images/Halo 4/Landfall.jpg')
+                }, {
+                    name: 'Longbow',
+                    url: require('../images/Halo 4/Longbow.jpg')
+                }, {
+                    name: 'Meltdown',
+                    url: require('../images/Halo 4/Meltdown.jpg')
+                }, {
+                    name: 'Monolith',
+                    url: require('../images/Halo 4/Monolith.jpg')
+                }, {
+                    name: 'Outcast',
+                    url: require('../images/Halo 4/Outcast.jpg')
+                }, {
+                    name: 'Perdition',
+                    url: require('../images/Halo 4/Perdition.jpg')
+                }, {
+                    name: 'Pitfall',
+                    url: require('../images/Halo 4/Pitfall.jpg')
+                }, {
+                    name: 'Ragnarok',
+                    url: require('../images/Halo 4/Ragnarok.jpg')
+                }, {
+                    name: 'Ravine',
+                    url: require('../images/Halo 4/Ravine.jpg')
+                }, {
+                    name: 'Shatter',
+                    url: require('../images/Halo 4/Shatter.jpg')
+                }, {
+                    name: 'Skyline',
+                    url: require('../images/Halo 4/Skyline.jpg')
+                }, {
+                    name: 'Solace',
+                    url: require('../images/Halo 4/Solace.jpg')
+                }, {
+                    name: 'Vertigo',
+                    url: require('../images/Halo 4/Vertigo.jpg')
+                }, {
+                    name: 'Vortex',
+                    url: require('../images/Halo 4/Vortex.jpg')
+                }, {
+                    name: 'Wreckage',
+                    url: require('../images/Halo 4/Wreckage.jpg')
+                },
+            ]
         }
     ];
 
