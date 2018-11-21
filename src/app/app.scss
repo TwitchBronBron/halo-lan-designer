@@ -1,0 +1,36 @@
+halo-app {
+    h1 {
+        background-color: lightblue;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .map {
+        display: inline-block;
+        border: 1px solid grey;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1.3em;
+        background-color: lightgrey;
+        vertical-align: middle;
+        margin: 5px;
+        width: 200px;
+        height: 180px;
+        overflow: hidden;
+        .title {
+            font-weight: bold;
+            display: block;
+            height: 30px;
+        }
+        .image-container {
+            max-height: calc(100% - 40px);
+            max-width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    #mapCount {
+        width: 40px;
+    }
+}

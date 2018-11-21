@@ -1,0 +1,30 @@
+<h1>Halo Map Picker</h1>
+Map Count: <input type="number" id="mapCount" ng-model="vm.mapCount"/>
+<div>1. Pick a game:</div>
+
+<label ng-repeat="
+    game in vm.games" ng-click="vm.selectedGameType=null">
+<input type="radio" name="game" ng-model="vm.selectedGame" ng-value="game">&nbsp;{{game.name}}
+</label>
+<br />
+<br />
+<div ng-if="vm.selectedGame">
+    <div>2. Pick a game type:</div>
+    <div>
+        <label ng-repeat="gameType in vm.selectedGame.gameTypes">
+            <input type="radio" name="gameType" ng-model="vm.selectedGameType" ng-change="vm.generateMaps()" ng-value="gameType">&nbsp;{{gameType.name}}
+        </label>
+    </div>
+</div>
+<br />
+<div ng-if="vm.selectedGame && vm.selectedGameType">
+    <button ng-click="vm.generateMaps()">Generate</button>
+    <div ng-if="vm.generatedMaps">
+        <div class="map" ng-repeat="map in vm.generatedMaps">
+            <span class="title">{{map.name}}</span>
+            <div class="image-container">
+                <img ng-src="{{map.url}}" />
+            </div>
+        </div>
+    </div>
+</div>
