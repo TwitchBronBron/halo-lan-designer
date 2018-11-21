@@ -23,14 +23,17 @@ export class AppComponent {
 
     public generatedMaps: Map[];
 
-    public showAll() {
-        var maps = [];
-        for (var map of this.selectedGame.maps) {
-            if (this.selectedGameType.mapNames.indexOf(map.name) > -1) {
-                maps.push(map);
-            }
-        }
-        this.generatedMaps = maps;
+    public selectGame(game: Game) {
+        this.selectedGame = game;
+        this.selectedGameType = undefined;
+        this.generatedMaps = undefined;
+        setTimeout(function () {
+
+            document.querySelector('#pick-game-type').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }, 20);
+
     }
 
     public reset() {
@@ -42,6 +45,12 @@ export class AppComponent {
         if (!this.selectedGameType) {
             return;
         }
+        setTimeout(function () {
+            document.querySelector('#maps').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 20);
         var indexes = <number[]>[];
         var maps = <Map[]>[];
         var iteration = 0;
@@ -54,12 +63,12 @@ export class AppComponent {
                 if (!map) {
                     map = {
                         name: mapName,
-                        portraitUrl: null
+                        url: null
                     };
                 }
                 maps.push(map);
             }
-            if (maps.length >= this.mapCount) {
+            if (indexes.length === this.selectedGameType.mapNames.length) {
                 break;
             }
         }
