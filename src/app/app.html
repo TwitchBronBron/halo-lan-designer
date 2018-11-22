@@ -11,7 +11,8 @@
     </div>
     <div ng-show="vm.selectedGame">
         <h3 id="pick-game-type">Pick a Game Type</h3>
-        <button ng-repeat="gameType in vm.selectedGame.gameTypes" ng-class="{selected: gameType === vm.selectedGameType}" ng-click="vm.selectedGameType = gameType; vm.generateMaps()">
+        <button ng-repeat="gameType in vm.selectedGame.gameTypes" ng-class="{selected: gameType === vm.selectedGameType}"
+            ng-click="vm.selectedGameType = gameType; vm.generateMaps()">
             {{gameType.name}}
         </button>
     </div>
@@ -20,7 +21,9 @@
         <h3 id="maps">Maps</h3>
         <div ng-if="vm.generatedMaps">
             <div class="map" ng-repeat="map in vm.generatedMaps">
-                <span class="title">{{map.name}}</span>
+                <span class="title">
+                    <span class="number">#{{$index+1}}</span>
+                    {{map.name}}</span>
                 <div class="image-container">
                     <img ng-src="{{map.url}}" />
                 </div>

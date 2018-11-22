@@ -21,6 +21,10 @@ input[type="number"] {
     border-radius: 4px;
 }
 
+[float-left] {
+    float: left;
+}
+
 [float-right] {
     float: right;
 }
@@ -35,6 +39,7 @@ button {
     display: inline-block;
     font-size: 16px;
     margin: 4px;
+    cursor: pointer;
 }
 
 button.selected {
@@ -61,7 +66,8 @@ halo-app {
         background-color: #2c2c2c;
         color: white;
         margin: 2px;
-        padding: 3px;
+        padding: 5px;
+        padding-bottom:0px;
         border-radius: 5px;
         cursor: pointer;
         img {
@@ -105,18 +111,24 @@ halo-app {
     .map {
         display: inline-block;
         border: 1px solid grey;
-        padding: 5px;
+        background-color: #353535;
         border-radius: 5px;
-        background-color: lightgrey;
         vertical-align: middle;
         margin: 5px;
-        width: 140px;
-        height: 120px;
+        width: 170px;
+        height: 117px;
         overflow: hidden;
         .title {
+            color: white;
+            text-align: center;
             font-weight: bold;
             display: block;
-            height: 30px;
+            height: 20px;
+            padding-right: 5px;
+            padding-left: 3px;
+            .number {
+                float: left;
+            }
         }
         .image-container {
             max-width: 100%;
