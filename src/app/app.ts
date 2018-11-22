@@ -1,5 +1,6 @@
 import { Component } from 'angular-ts-decorators';
 import { DataService, Map, Game, GameType } from '../dataService';
+import { collapseSection, expandSection } from '../animations';
 
 @Component({
     selector: 'haloApp',
@@ -17,8 +18,36 @@ export class AppComponent {
         return this.dataService.games;
     }
 
-    public isGamesHidden = false;
-    public isGameTypesHidden = false;
+
+    public get isGamesHidden() {
+        return this._isGamesHidden;
+    }
+    public set isGamesHidden(value) {
+        this._isGamesHidden = value;
+        let element = document.getElementById('games-body');
+        if (value) {
+            collapseSection(element);
+        } else {
+            expandSection(element);
+        }
+    }
+    private _isGamesHidden = false;
+
+    public get isGameTypesHidden() {
+        return this._isGameTypesHidden;
+    }
+    public set isGameTypesHidden(value) {
+        this._isGameTypesHidden = value;
+        setTimeout(function () {
+            let element = document.getElementById('games-type-body');
+            if (value) {
+                collapseSection(element);
+            } else {
+                expandSection(element);
+            }
+        });
+    }
+    private _isGameTypesHidden = false;
 
     public selectedGame: Game;
 
@@ -32,16 +61,14 @@ export class AppComponent {
         this.isGameTypesHidden = false;
         this.selectedGameType = undefined;
         this.generatedMaps = undefined;
-        if (scroll) {
-            setTimeout(function () {
-                document.querySelector('#pick-game-type').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }, 20);
-        }
+        // if (scroll) {
+        //     document.querySelector('#pick-game-type').scrollIntoView({
+        //         behavior: 'smooth'
+        //     });
+        // }
     }
 
-    public selectGameType(gameType: GameType, scroll=true) {
+    public selectGameType(gameType: GameType, scroll = true) {
         this.selectedGameType = gameType;
         this.isGameTypesHidden = true;
         this.generateMaps(scroll);
@@ -127,14 +154,12 @@ export class AppComponent {
         }
         this.generatedMaps = maps;
 
-        if (scroll) {
-            setTimeout(function () {
-                document.querySelector('#maps').scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }, 20);
-        }
+        // if (scroll) {
+        //     document.querySelector('#maps').scrollIntoView({
+        //         behavior: 'smooth',
+        //         block: 'start'
+        //     });
+        // }
     }
 
     getRandomInt(min, max) {
