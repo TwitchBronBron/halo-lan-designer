@@ -3,23 +3,39 @@
 </div>
 <div class="content">
     <div class="game-container">
-        <h3>Pick a Game</h3>
-        <div class="game" ng-class="{selected: game === vm.selectedGame}" ng-repeat="game in vm.games" ng-click="vm.selectGame(game)">
-            <span class="name">{{game.name}}</span>
-            <img ng-src="{{game.url}}" />
+        <h3 class="panel-header" pointer ng-click="vm.isGamesHidden=!vm.isGamesHidden">
+            <div>
+                <span ng-if="vm.isGamesHidden">&plus;</span>
+                <span ng-if="!vm.isGamesHidden">&minus;</span>
+                <span class="panel-header-description">Game</span>
+            </div>
+            <span ng-if="vm.selectedGame" class="selection-box">{{vm.selectedGame.name}}</span>
+            <i clearfix></i>
+        </h3>
+        <div class="panel-body" ng-if="!vm.isGamesHidden">
+            <div class="game" ng-class="{selected: game === vm.selectedGame}" ng-repeat="game in vm.games" ng-click="vm.selectGame(game)">
+                <span class="name">{{game.name}}</span>
+                <img ng-src="{{game.url}}" />
+            </div>
         </div>
     </div>
     <div ng-show="vm.selectedGame">
-        <h3 id="pick-game-type">Pick a Game Type</h3>
-        <button ng-repeat="gameType in vm.selectedGame.gameTypes" ng-class="{selected: gameType === vm.selectedGameType}"
-            ng-click="vm.selectGameType(gameType)">
-            {{gameType.name}}
-        </button>
+        <h3 pointer class="panel-header" id="pick-game-type" ng-click="vm.isGameTypesHidden=!vm.isGameTypesHidden">
+            <span ng-if="vm.isGameTypesHidden">&plus;</span>
+            <span ng-if="!vm.isGameTypesHidden">&minus;</span>
+            <span class="panel-header-description">Game Type</span>
+            <span ng-if="vm.selectedGameType" class="selection-box">{{vm.selectedGameType.name}}</span>
+        </h3>
+        <div class="panel-body" ng-if="!vm.isGameTypesHidden">
+            <button ng-repeat="gameType in vm.selectedGame.gameTypes" ng-class="{selected: gameType === vm.selectedGameType}"
+                ng-click="vm.selectGameType(gameType)">
+                {{gameType.name}}
+            </button>
+        </div>
     </div>
-    <br />
     <div ng-show="vm.selectedGame && vm.selectedGameType">
-        <h3 id="maps">Maps</h3>
-        <div ng-if="vm.generatedMaps">
+        <h3 class="panel-header" id="maps">Maps</h3>
+        <div class="panel-body" ng-if="vm.generatedMaps">
             <div class="map" ng-repeat="map in vm.generatedMaps">
                 <span class="title">
                     <span class="number">#{{$index+1}}</span>

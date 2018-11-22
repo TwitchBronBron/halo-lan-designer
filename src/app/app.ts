@@ -17,27 +17,34 @@ export class AppComponent {
         return this.dataService.games;
     }
 
+    public isGamesHidden = false;
+    public isGameTypesHidden = false;
+
     public selectedGame: Game;
 
     public selectedGameType: GameType;
 
     public generatedMaps: Map[];
 
-    public selectGame(game: Game) {
+    public selectGame(game: Game, scroll = true) {
         this.selectedGame = game;
+        this.isGamesHidden = true;
+        this.isGameTypesHidden = false;
         this.selectedGameType = undefined;
         this.generatedMaps = undefined;
-        setTimeout(function () {
-
-            document.querySelector('#pick-game-type').scrollIntoView({
-                behavior: 'smooth'
-            });
-        }, 20);
+        if (scroll) {
+            setTimeout(function () {
+                document.querySelector('#pick-game-type').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }, 20);
+        }
     }
 
-    public selectGameType(gameType: GameType) {
+    public selectGameType(gameType: GameType, scroll=true) {
         this.selectedGameType = gameType;
-        this.generateMaps();
+        this.isGameTypesHidden = true;
+        this.generateMaps(scroll);
     }
 
     /**
@@ -61,7 +68,7 @@ export class AppComponent {
         if (this.usedVariants.length === count) {
             this.usedVariants = [];
         }
-        
+
         //get a random variant index that we haven't used before
         var randomNumber = 0;
         for (var i = 0; i < 10000; i++) {
@@ -79,8 +86,8 @@ export class AppComponent {
         outer: for (var game of this.games) {
             for (var gameType of game.gameTypes) {
                 if (count === randomNumber) {
-                    this.selectGame(game);
-                    this.selectGameType(gameType);
+                    this.selectGame(game, false);
+                    this.selectGameType(gameType, false);
                     break outer;
                 }
                 count++;
@@ -93,16 +100,10 @@ export class AppComponent {
         this.selectedGameType = undefined;
     }
 
-    public generateMaps() {
+    public generateMaps(scroll = true) {
         if (!this.selectedGameType) {
             return;
         }
-        setTimeout(function () {
-            document.querySelector('#maps').scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }, 20);
         var indexes = <number[]>[];
         var maps = <Map[]>[];
         var iteration = 0;
@@ -125,6 +126,15 @@ export class AppComponent {
             }
         }
         this.generatedMaps = maps;
+
+        if (scroll) {
+            setTimeout(function () {
+                document.querySelector('#maps').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 20);
+        }
     }
 
     getRandomInt(min, max) {
