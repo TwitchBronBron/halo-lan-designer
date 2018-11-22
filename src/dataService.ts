@@ -313,13 +313,13 @@ export class DataService {
             }, {
                 name: 'Team King of the Hill',
                 mapNames: ['Construct', 'Guardian', 'Citadel', 'Snowbound', 'The Pit', 'Blackout', 'Isolation']
-            }, , {
+            }, {
                 name: 'Crazy King of the Hill',
                 mapNames: ['Construct', 'Guardian', 'Citadel', 'Snowbound', 'The Pit', 'Blackout', 'Isolation']
             }, {
                 name: 'Team Oddball',
                 mapNames: ['Guardian', 'Heretic', 'The Pit', 'Assembly', 'Blackout', 'Citadel', 'Ghost Town']
-            }, , {
+            }, {
                 name: 'Ninjaball',
                 mapNames: ['Guardian', 'Heretic', 'The Pit', 'Assembly', 'Blackout', 'Citadel', 'Ghost Town']
             }, {

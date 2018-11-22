@@ -33,7 +33,59 @@ export class AppComponent {
                 behavior: 'smooth'
             });
         }, 20);
+    }
 
+    public selectGameType(gameType: GameType) {
+        this.selectedGameType = gameType;
+        this.generateMaps();
+    }
+
+    /**
+     * Keeps track of the already used random variants (to prevent dupes)
+     */
+    private usedVariants: number[] = [];
+
+    public randomize() {
+        var allMapsIndexes = [];
+        //get total number of options
+        var count = 0;
+        for (var game of this.games) {
+            for (var gameType of game.gameTypes) {
+                if (gameType.name === 'All Maps') {
+                    allMapsIndexes.push(count);
+                }
+                count++;
+            }
+        }
+        //if we have used up all of our variants, reset the variant counter
+        if (this.usedVariants.length === count) {
+            this.usedVariants = [];
+        }
+        
+        //get a random variant index that we haven't used before
+        var randomNumber = 0;
+        for (var i = 0; i < 10000; i++) {
+            randomNumber = this.getRandomInt(0, count);
+            //don't use a number we already used, and skip the 'All Maps' items'
+            if (this.usedVariants.indexOf(randomNumber) === -1 && allMapsIndexes.indexOf(randomNumber) === -1) {
+                this.usedVariants.push(randomNumber);
+                //keep this value
+                break;
+            }
+        }
+
+        //select the variant
+        count = 0;
+        outer: for (var game of this.games) {
+            for (var gameType of game.gameTypes) {
+                if (count === randomNumber) {
+                    this.selectGame(game);
+                    this.selectGameType(gameType);
+                    break outer;
+                }
+                count++;
+            }
+        }
     }
 
     public reset() {

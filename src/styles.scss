@@ -1,3 +1,4 @@
+$successColor: #037c00;
 body,
 html {
     padding: 0;
@@ -43,7 +44,7 @@ button {
 }
 
 button.selected {
-    background-color: #037c00;
+    background-color: $successColor;
 }
 
 halo-app {
@@ -67,7 +68,7 @@ halo-app {
         color: white;
         margin: 2px;
         padding: 5px;
-        padding-bottom:0px;
+        padding-bottom: 0px;
         border-radius: 5px;
         cursor: pointer;
         img {
@@ -78,7 +79,7 @@ halo-app {
             text-align: center;
         }
         &.selected {
-            background-color: #037c00;
+            background-color: $successColor;
         }
     }
     label {
@@ -140,4 +141,11 @@ halo-app {
     #mapCount {
         width: 40px;
     }
+}
+
+.btn-random {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $successColor;
 }
