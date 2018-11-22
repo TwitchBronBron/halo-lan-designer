@@ -14,8 +14,7 @@ export class DataService {
     public games = <Game[]>[
         {
             name: 'Halo: CE',
-            portraitUrl: require('../images/covers/Halo 1 portrait.jpg'),
-            landscapeUrl: require('../images/covers/Halo 1 landscape.jpg'),
+            url: require('../images/covers/Halo 1 portrait.jpg'),
             maps: [
                 {
                     name: 'Battle Creek',
@@ -76,10 +75,9 @@ export class DataService {
         },
         {
             name: 'Halo 2',
-            portraitUrl: require('../images/covers/Halo 2 portrait.jpg'),
-            landscapeUrl: require('../images/covers/Halo 2 landscape.jpg'),
+            url: require('../images/covers/Halo 2 portrait.jpg'),
             gameTypes: [{
-                name: 'Team Slayer/SWAT',
+                name: 'Team Slayer',
                 mapNames: [
                     'Gemini',
                     'Lockout',
@@ -90,7 +88,28 @@ export class DataService {
                     'Turf'
                 ],
             }, {
-                name: 'Oddball/Fiestaball',
+                name: 'SWAT',
+                mapNames: [
+                    'Gemini',
+                    'Lockout',
+                    'Sanctuary',
+                    'Ascension',
+                    'Ivory Tower',
+                    'Tombstone',
+                    'Turf'
+                ],
+            }, {
+                name: 'Team Oddball',
+                mapNames: [
+                    'Midship',
+                    'Warlock',
+                    'Lockout',
+                    'Desolation',
+                    'Ivory Tower',
+                    'Ascension'
+                ],
+            }, {
+                name: 'Team Fiestaball',
                 mapNames: [
                     'Midship',
                     'Warlock',
@@ -101,7 +120,7 @@ export class DataService {
                 ],
             },
             {
-                name: 'Capture The Flag',
+                name: 'CTF 2 Flag',
                 mapNames: [
                     'Beaver Creek',
                     'Midship',
@@ -110,7 +129,27 @@ export class DataService {
                     'Containment'
                 ]
             }, {
-                name: 'King of the Hill',
+                name: 'CTF 1 Flag',
+                mapNames: [
+                    'Beaver Creek',
+                    'Midship',
+                    'Sanctuary',
+                    'Zanzibar',
+                    'Containment'
+                ]
+            }, {
+                name: 'Team King of the Hill',
+                mapNames: [
+                    'Lockout',
+                    'Beaver Creek',
+                    'Warlock',
+                    'Midship',
+                    'Ascension',
+                    'Sanctuary',
+                    'Uplift'
+                ]
+            }, {
+                name: 'Crazy King of the Hill',
                 mapNames: [
                     'Lockout',
                     'Beaver Creek',
@@ -201,19 +240,30 @@ export class DataService {
             ]
         }, {
             name: 'Halo 2:A',
-            portraitUrl: require('../images/covers/Halo 2 Anniversary portrait.jpg'),
-            landscapeUrl: require('../images/covers/Halo 2 Anniversary landscape.jpg'),
+            url: require('../images/covers/Halo 2 Anniversary portrait.jpg'),
             gameTypes: [{
-                name: 'Slayer (Team & SWAT)',
+                name: 'Team Slayer',
                 mapNames: ['Lockdown', 'Zenith', 'Remnant']
             }, {
-                name: 'Oddball (Team & Fiestaball)',
+                name: 'Team SWAT',
+                mapNames: ['Lockdown', 'Zenith', 'Remnant']
+            }, {
+                name: 'Team Oddball',
                 mapNames: ['Shrine', 'Lockdown', 'Warlord']
             }, {
-                name: 'Capture The Flag',
+                name: 'Team Fiestaball',
+                mapNames: ['Shrine', 'Lockdown', 'Warlord']
+            }, {
+                name: 'CTF 2 Flags',
                 mapNames: ['Warlord', 'Shrine', 'Stonetown']
             }, {
-                name: 'King of the Hill',
+                name: 'CTF 1 Flag',
+                mapNames: ['Warlord', 'Shrine', 'Stonetown']
+            }, {
+                name: 'Team King of the Hill',
+                mapNames: ['Zenith', 'Lockdown', 'Shrine']
+            }, {
+                name: 'Crazy King of the Hill',
                 mapNames: ['Zenith', 'Lockdown', 'Shrine']
             }],
             maps: [
@@ -247,22 +297,36 @@ export class DataService {
         },
         {
             name: 'Halo 3',
-            portraitUrl: require('../images/covers/Halo 3 portrait.jpg'),
-            landscapeUrl: require('../images/covers/Halo 3 landscape.jpg'),
+            url: require('../images/covers/Halo 3 portrait.jpg'),
             gameTypes: [{
-                name: 'Slayer (Team & Slayer Duel)',
+                name: 'Team Slayer',
                 mapNames: ['Cold Storage', 'Epitaph', 'Construct', 'Narrows', 'Heretic', 'Assembly', 'Sandtrap']
             }, {
-                name: 'Capture the Flag',
+                name: 'Slayer Duel',
+                mapNames: ['Cold Storage', 'Epitaph', 'Construct', 'Narrows', 'Heretic', 'Assembly', 'Sandtrap']
+            }, {
+                name: 'CTF 2 Flag',
                 mapNames: ['Citadel', 'The Pit', 'Narrows', 'Snowbound', 'High Ground', 'Last Resort', 'Valhalla']
             }, {
-                name: 'King of the Hill',
+                name: 'CTF 1 Flag',
+                mapNames: ['Citadel', 'The Pit', 'Narrows', 'Snowbound', 'High Ground', 'Last Resort', 'Valhalla']
+            }, {
+                name: 'Team King of the Hill',
+                mapNames: ['Construct', 'Guardian', 'Citadel', 'Snowbound', 'The Pit', 'Blackout', 'Isolation']
+            }, , {
+                name: 'Crazy King of the Hill',
                 mapNames: ['Construct', 'Guardian', 'Citadel', 'Snowbound', 'The Pit', 'Blackout', 'Isolation']
             }, {
-                name: 'Oddball',
+                name: 'Team Oddball',
+                mapNames: ['Guardian', 'Heretic', 'The Pit', 'Assembly', 'Blackout', 'Citadel', 'Ghost Town']
+            }, , {
+                name: 'Ninjaball',
                 mapNames: ['Guardian', 'Heretic', 'The Pit', 'Assembly', 'Blackout', 'Citadel', 'Ghost Town']
             }, {
-                name: 'Infection',
+                name: 'Infection Classic',
+                mapNames: ['Epitaph', 'Cold Storage', 'Guardian', 'Isolation', 'Ghost Town', 'Last Resort', 'Vahalla']
+            }, {
+                name: 'Infection Alpha Zombie',
                 mapNames: ['Epitaph', 'Cold Storage', 'Guardian', 'Isolation', 'Ghost Town', 'Last Resort', 'Vahalla']
             }],
             maps: [
@@ -343,16 +407,24 @@ export class DataService {
 
         }, {
             name: 'Halo 4',
-            portraitUrl: require('../images/covers/Halo 4 portrait.jpg'),
-            landscapeUrl: require('../images/covers/Halo 4 landscape.jpg'),
+            url: require('../images/covers/Halo 4 portrait.jpg'),
             gameTypes: [{
-                name: 'Slayer (FFA & Team)',
+                name: 'Slayer Free For All',
                 mapNames: ['Adrift', 'Haven', 'Impact', 'Skyline', 'Abandon', 'Solace', 'Complex', 'Exile']
             }, {
-                name: 'Capture the Flag',
+                name: 'Team Slayer',
+                mapNames: ['Adrift', 'Haven', 'Impact', 'Skyline', 'Abandon', 'Solace', 'Complex', 'Exile']
+            }, {
+                name: 'CTF 2 Flag',
                 mapNames: ['Haven', 'Pitfall', 'Adrift', 'Harvest', 'Longbow', 'Exile', 'Meltdown', 'Ragnarok']
             }, {
-                name: 'King of the Hill',
+                name: 'CTF 1 Flag',
+                mapNames: ['Haven', 'Pitfall', 'Adrift', 'Harvest', 'Longbow', 'Exile', 'Meltdown', 'Ragnarok']
+            }, {
+                name: 'Team King of the Hill',
+                mapNames: ['Pitfall', 'Adrift', 'Impact', 'Monolith', 'Complex', 'Wreckage', 'Vertigo']
+            }, {
+                name: 'Crazy King of the Hill',
                 mapNames: ['Pitfall', 'Adrift', 'Impact', 'Monolith', 'Complex', 'Wreckage', 'Vertigo']
             }, {
                 name: 'Flood',
@@ -448,8 +520,7 @@ export interface Map {
 
 export interface Game {
     name: string;
-    portraitUrl: string;
-    landscapeUrl: string;
+    url: string;
     maps: Map[];
     gameTypes: GameType[]
 }
