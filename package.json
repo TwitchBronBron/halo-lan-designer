@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel serve index.html",
-    "build": "parcel build index.html --public-url /halo-map-picker/",
-    "publish": "npm run build && copyfiles -u 1 \"dist/**/*.*\" //192.168.1.8/www/html/halo-map-picker"
+    "build": "parcel build index.html --public-url /halo-randomizer/"
   },
   "directories": {
     "lib": "lib"
