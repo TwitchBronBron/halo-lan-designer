@@ -20,32 +20,35 @@ export class AppComponent {
 
 
     public get isGamesHidden() {
-        return this._isGamesHidden;
+        return false;
+        //never hide sections
+        //this._isGamesHidden;
     }
     public set isGamesHidden(value) {
-        this._isGamesHidden = value;
-        let element = document.getElementById('games-body');
-        if (value) {
-            collapseSection(element);
-        } else {
-            expandSection(element);
-        }
+        // this._isGamesHidden = value;
+        // let element = document.getElementById('games-body');
+        // if (value) {
+        //     collapseSection(element);
+        // } else {
+        //     expandSection(element);
+        // }
     }
     private _isGamesHidden = false;
 
     public get isGameTypesHidden() {
-        return this._isGameTypesHidden;
+        // return this._isGameTypesHidden;
+        return false;
     }
     public set isGameTypesHidden(value) {
-        this._isGameTypesHidden = value;
-        setTimeout(function () {
-            let element = document.getElementById('games-type-body');
-            if (value) {
-                collapseSection(element);
-            } else {
-                expandSection(element);
-            }
-        });
+        // this._isGameTypesHidden = value;
+        // setTimeout(function () {
+        //     let element = document.getElementById('games-type-body');
+        //     if (value) {
+        //         collapseSection(element);
+        //     } else {
+        //         expandSection(element);
+        //     }
+        // });
     }
     private _isGameTypesHidden = false;
 
