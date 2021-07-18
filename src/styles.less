@@ -1,5 +1,7 @@
-$successColor: #037c00;
-$dark: #242424;
+:root{
+    --success-olor: #037c00;
+    --dark: #242424;
+}
 body,
 html {
     padding: 0;
@@ -53,7 +55,7 @@ button {
 }
 
 button.selected {
-    background-color: $successColor;
+    background-color: var(--success-color);
     color: white;
 }
 
@@ -89,14 +91,14 @@ halo-app {
             text-align: center;
         }
         &.selected {
-            background-color: $successColor;
+            background-color: var(--success-color);
         }
     }
     label {
         white-space: nowrap;
     }
     .title-bar {
-        background-color: $dark;
+        background-color: var(--dark);
         padding: 5px 10px;
         font-size: 2em;
         cursor: pointer;
@@ -158,7 +160,7 @@ halo-app {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: $successColor;
+    background-color: var(--success-color);;
     color: white;
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
     outline: none;
@@ -173,7 +175,7 @@ halo-app {
 }
 
 .selection-box {
-    background-color: $successColor;
+    background-color: var(--success-color);
     padding: 8px;
     color: white !important;
     margin-left: 5px;

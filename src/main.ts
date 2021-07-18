@@ -1,8 +1,8 @@
 import { NgModule } from 'angular-ts-decorators';
 import { AppComponent } from './app/app';
 import { DataService } from './dataService';
-import './styles.scss';
-import './**/*.scss';
+import './styles.less';
+import './**/*.less';
 
 @NgModule({
     id: 'app',
