@@ -84,6 +84,11 @@ export const data = {
             minPlayers: 2,
             maxPlayers: 6
         }, {
+            name: 'Sidewinder',
+            imageUrl: new URL('../images/Halo 1/Sidewinder.jpg', import.meta.url).href,
+            minPlayers: 4,
+            maxPlayers: 16
+        }, {
             name: 'Timberland',
             imageUrl: new URL('../images/Halo 1/Timberland.jpg', import.meta.url).href,
             minPlayers: 4,
