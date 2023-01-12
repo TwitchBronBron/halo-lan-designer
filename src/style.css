@@ -1,0 +1,8 @@
+:root {
+    --success-color: #037c00;
+    --dark: #242424;
+}
+
+button {
+    cursor: pointer;
+}
