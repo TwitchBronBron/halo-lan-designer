@@ -37,7 +37,7 @@
 	<div>
 		Pick games ({selection.size} selected)
 		<button on:click={selectAll} disabled={selection.size === games.length}>All</button>
-		<button on:click={selectNone}>None</button>
+		<button on:click={selectNone} disabled={selection.size === 0}>None</button>
 	</div>
 
 	{#each games as game}
