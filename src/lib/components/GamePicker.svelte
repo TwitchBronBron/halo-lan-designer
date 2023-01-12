@@ -8,7 +8,6 @@
 	export let games: Game[];
 
 	let selection = new Set<Game>();
-	selection.add(games[0]);
 
 	function toggleSelection(game: Game) {
 		console.log('clicked');
@@ -19,9 +18,7 @@
 		}
 		//trigger a change
 		selection = selection;
-		dispatch('selectionChanged', {
-			games: [...selection.entries()]
-		});
+		dispatch('selectionChange', [...selection]);
 	}
 
 	function selectAll() {

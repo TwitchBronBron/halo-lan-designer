@@ -97,15 +97,19 @@ export const data = {
     }, {
         name: 'Halo 2',
         imageUrl: new URL('../images/covers/Halo 2 portrait.jpg', import.meta.url).href,
+        maps: []
     }, {
         name: 'Halo 2:A',
         imageUrl: new URL('../images/covers/Halo 2 Anniversary portrait.jpg', import.meta.url).href,
+        maps: []
     }, {
         name: 'Halo 3',
         imageUrl: new URL('../images/covers/Halo 3 portrait.jpg', import.meta.url).href,
+        maps: []
     }, {
         name: 'Halo 4',
         imageUrl: new URL('../images/covers/Halo 4 portrait.jpg', import.meta.url).href,
+        maps: []
     }] as Game[]
 };
 
