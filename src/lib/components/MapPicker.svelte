@@ -5,12 +5,11 @@
 
 	const dispatch = createEventDispatcher();
 
-	export let maps:Map[];
+	export let maps: Map[];
 
 	let selection = new Set<Map>();
 
 	function toggleSelection(game: Map) {
-		console.log('clicked');
 		if (selection.has(game)) {
 			selection.delete(game);
 		} else {

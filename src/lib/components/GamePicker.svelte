@@ -8,9 +8,11 @@
 	export let games: Game[];
 
 	let selection = new Set<Game>();
+	setTimeout(() => {
+		toggleSelection(games[0]);
+	}, 100);
 
 	function toggleSelection(game: Game) {
-		console.log('clicked');
 		if (selection.has(game)) {
 			selection.delete(game);
 		} else {

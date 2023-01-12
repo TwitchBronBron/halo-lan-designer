@@ -2,6 +2,7 @@ import battleCreek from '../images/Halo 1/Battle Creek.jpg';
 export const data = {
     games: [{
         name: 'Halo: CE',
+        shortName: 'H:CE',
         imageUrl: new URL('../images/covers/Halo 1 portrait.jpg', import.meta.url).href,
         maps: [{
             name: 'Battle Creek',
@@ -120,6 +121,7 @@ export const data = {
         }]
     }, {
         name: 'Halo 2',
+        shortName: 'H2',
         imageUrl: new URL('../images/covers/Halo 2 portrait.jpg', import.meta.url).href,
         maps: [{
             name: 'Ascension',
@@ -200,6 +202,7 @@ export const data = {
         ]
     }, {
         name: 'Halo 2:A',
+        shortName: 'H2:A',
         imageUrl: new URL('../images/covers/Halo 2 Anniversary portrait.jpg', import.meta.url).href,
         maps: [{
             name: 'Lockdown',
@@ -229,6 +232,7 @@ export const data = {
         }]
     }, {
         name: 'Halo 3',
+        shortName: 'H3',
         imageUrl: new URL('../images/covers/Halo 3 portrait.jpg', import.meta.url).href,
         maps: [
             {
@@ -307,6 +311,7 @@ export const data = {
         ]
     }, {
         name: 'Halo 4',
+        shortName: 'H4',
         imageUrl: new URL('../images/covers/Halo 4 portrait.jpg', import.meta.url).href,
         maps: [
             {
@@ -389,8 +394,18 @@ export const data = {
     }] as Game[]
 };
 
+for (const game of data.games) {
+    for (const map of game.maps) {
+        map.game = game;
+    }
+}
+
 export interface Game {
     name: string;
+    /**
+     * The short abbreviated name for this game
+     */
+    shortName: string;
     /**
      * URL to the halopedia page for this game
      */
@@ -404,6 +419,13 @@ export interface Game {
 }
 
 export interface Map {
+    /**
+     * A reference to the game this map belongs to
+     */
+    game: Game;
+    /**
+     * The name of this map
+     */
     name: string;
     /**
      * URL to the halopedia page for this map
