@@ -1,7 +1,5 @@
 <script lang="ts">
-	import '../style.css';
 	import GamePicker from '$lib/components/GamePicker.svelte';
-	import GameTile from '$lib/components/GameTile.svelte';
 	import { data, type Game, type Map } from '$lib/data';
 	import MapPicker from '$lib/components/MapPicker.svelte';
 

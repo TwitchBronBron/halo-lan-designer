@@ -5,9 +5,10 @@
 	export let selected = true;
 </script>
 
-<div class="map" class:selected on:click>
+<div class="map" class:selected on:click on:keyup>
 	<span class="title">
 		{map.name}
+		<a class="info" href={map.url} target="_blank" rel="noreferrer">&#8505;</a>
 	</span>
 	<div class="image-container">
 		<img src={map.imageUrl} alt="{map.name} thumbnail" />
@@ -47,5 +48,18 @@
 
 	.selected {
 		background-color: var(--success-color);
+	}
+
+	.info {
+		float: right;
+		border-radius: 50px;
+		background-color: white;
+		color: black;
+		font-size: 0.9em;
+		width: 18px;
+		height: 18px;
+		overflow: hidden;
+		margin-top: 3px;
+		text-decoration: none;
 	}
 </style>

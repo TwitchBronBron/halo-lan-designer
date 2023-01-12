@@ -18,7 +18,6 @@
 		}
 		//trigger a change
 		selection = selection;
-		debugger;
 		dispatch('selectionChange', [...selection]);
 	}
 
