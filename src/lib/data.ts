@@ -157,152 +157,152 @@ export const data = {
             name: 'Ascension',
             url: 'https://www.halopedia.org/Ascension',
             imageUrl: new URL('../images/Halo 2/Ascension.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 12
         }, {
             name: 'Backwash',
             url: 'https://www.halopedia.org/Backwash',
             imageUrl: new URL('../images/Halo 2/Backwash.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 10
         }, {
             name: 'Beaver Creek',
             url: 'https://www.halopedia.org/Beaver_Creek',
             imageUrl: new URL('../images/Halo 2/Beaver Creek.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         }, {
             name: 'Burial Mounds',
             url: 'https://www.halopedia.org/Burial_Mounds',
             imageUrl: new URL('../images/Halo 2/Burial Mounds.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 4,
+            maxPlayers: 16
         }, {
             name: 'Coagulation',
             url: 'https://www.halopedia.org/Coagulation',
             imageUrl: new URL('../images/Halo 2/Coagulation.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 4,
+            maxPlayers: 16
         }, {
             name: 'Colossus',
-            url: 'https://www.halopedia.org/Colossus',
+            url: 'https://www.halopedia.org/Colossus_(map)',
             imageUrl: new URL('../images/Halo 2/Colossus.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 4,
+            maxPlayers: 14
         }, {
             name: 'Containment',
             url: 'https://www.halopedia.org/Containment',
             imageUrl: new URL('../images/Halo 2/Containment.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 6,
+            maxPlayers: 16
         }, {
             name: 'Desolation',
             url: 'https://www.halopedia.org/Desolation',
             imageUrl: new URL('../images/Halo 2/Desolation.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         }, {
             name: 'District',
             url: 'https://www.halopedia.org/District',
             imageUrl: new URL('../images/Halo 2/District.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 8,
+            maxPlayers: 16
         }, {
             name: 'Elongation',
             url: 'https://www.halopedia.org/Elongation',
             imageUrl: new URL('../images/Halo 2/Elongation.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 6
         }, {
             name: 'Foundation',
             url: 'https://www.halopedia.org/Foundation',
             imageUrl: new URL('../images/Halo 2/Foundation.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         }, {
             name: 'Gemini',
             url: 'https://www.halopedia.org/Gemini',
             imageUrl: new URL('../images/Halo 2/Gemini.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 6
         }, {
             name: 'Headlong',
             url: 'https://www.halopedia.org/Headlong',
             imageUrl: new URL('../images/Halo 2/Headlong.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 6,
+            maxPlayers: 16
         }, {
             name: 'Ivory Tower',
             url: 'https://www.halopedia.org/Ivory_Tower',
             imageUrl: new URL('../images/Halo 2/Ivory Tower.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 12
         }, {
             name: 'Lockout',
             url: 'https://www.halopedia.org/Lockout',
             imageUrl: new URL('../images/Halo 2/Lockout.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         }, {
             name: 'Midship',
             url: 'https://www.halopedia.org/Midship',
             imageUrl: new URL('../images/Halo 2/Midship.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         }, {
             name: 'Relic',
             url: 'https://www.halopedia.org/Relic',
             imageUrl: new URL('../images/Halo 2/Relic.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 6,
+            maxPlayers: 16
         }, {
             name: 'Sanctuary',
             url: 'https://www.halopedia.org/Sanctuary',
             imageUrl: new URL('../images/Halo 2/Sanctuary.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 10
         }, {
             name: 'Terminal',
             url: 'https://www.halopedia.org/Terminal',
             imageUrl: new URL('../images/Halo 2/Terminal.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 6,
+            maxPlayers: 16
         }, {
             name: 'Tombstone',
             url: 'https://www.halopedia.org/Tombstone',
             imageUrl: new URL('../images/Halo 2/Tombstone.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 4,
+            maxPlayers: 16
         }, {
             name: 'Turf',
             url: 'https://www.halopedia.org/Turf',
             imageUrl: new URL('../images/Halo 2/Turf.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 10
         }, {
             name: 'Uplift',
             url: 'https://www.halopedia.org/Uplift',
             imageUrl: new URL('../images/Halo 2/Uplift.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 6,
+            maxPlayers: 16
         }, {
             name: 'Warlock',
             url: 'https://www.halopedia.org/Warlock',
             imageUrl: new URL('../images/Halo 2/Warlock.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         }, {
             name: 'Waterworks',
             url: 'https://www.halopedia.org/Waterworks',
             imageUrl: new URL('../images/Halo 2/Waterworks.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 6,
+            maxPlayers: 16
         }, {
             name: 'Zanzibar',
             url: 'https://www.halopedia.org/Zanzibar',
             imageUrl: new URL('../images/Halo 2/Zanzibar.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 16,
+            maxPlayers: 2
         },
         ],
         modes: [{
@@ -354,48 +354,48 @@ export const data = {
             name: 'Lockdown',
             url: 'https://www.halopedia.org/Lockdown',
             imageUrl: new URL('../images/Halo 2A/Lockdown.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         }, {
             name: 'Zenith',
             url: 'https://www.halopedia.org/Zenith',
             imageUrl: new URL('../images/Halo 2A/Zenith.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 12
         },
         {
             name: 'Stonetown',
             url: 'https://www.halopedia.org/Stonetown',
             imageUrl: new URL('../images/Halo 2A/Stonetown.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 12,
+            maxPlayers: 16
         },
         {
             name: 'Bloodline',
             url: 'https://www.halopedia.org/Bloodline',
             imageUrl: new URL('../images/Halo 2A/Bloodline.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 4,
+            maxPlayers: 16
         }, {
             name: 'Warlord',
             url: 'https://www.halopedia.org/Warlord',
             imageUrl: new URL('../images/Halo 2A/Warlord.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 8
         },
         {
             name: 'Shrine',
             url: 'https://www.halopedia.org/Shrine',
             imageUrl: new URL('../images/Halo 2A/Shrine.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 2,
+            maxPlayers: 10
         },
         {
             name: 'Remnant',
             url: 'https://www.halopedia.org/Remnant',
             imageUrl: new URL('../images/Halo 2A/Remnant.jpg', import.meta.url).href,
-            minPlayers: 999,
-            maxPlayers: 999
+            minPlayers: 12,
+            maxPlayers: 16
         }],
         modes: [{
             name: 'Team Slayer',
@@ -435,116 +435,116 @@ export const data = {
                 name: 'Assembly',
                 url: 'https://www.halopedia.org/Assembly',
                 imageUrl: new URL('../images/Halo 3/Assembly.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 8
             }, {
                 name: 'Avalanche',
                 url: 'https://www.halopedia.org/Avalanche',
                 imageUrl: new URL('../images/Halo 3/Avalanche.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 6,
+                maxPlayers: 16
             }, {
                 name: 'Blackout',
                 url: 'https://www.halopedia.org/Blackout',
                 imageUrl: new URL('../images/Halo 3/Blackout.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Citadel',
                 url: 'https://www.halopedia.org/Citadel',
                 imageUrl: new URL('../images/Halo 3/Citadel.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 6
             }, {
                 name: 'Cold Storage',
                 url: 'https://www.halopedia.org/Cold_Storage',
                 imageUrl: new URL('../images/Halo 3/Cold Storage.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 6
             }, {
                 name: 'Construct',
                 url: 'https://www.halopedia.org/Construct',
                 imageUrl: new URL('../images/Halo 3/Construct.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 8
             }, {
                 name: 'Epitaph',
                 url: 'https://www.halopedia.org/Epitaph',
                 imageUrl: new URL('../images/Halo 3/Epitaph.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 6
             }, {
                 name: 'Foundry',
                 url: 'https://www.halopedia.org/Foundry',
                 imageUrl: new URL('../images/Halo 3/Foundry.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Ghost Town',
                 url: 'https://www.halopedia.org/Ghost_Town',
                 imageUrl: new URL('../images/Halo 3/Ghost Town.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Guardian',
-                url: 'https://www.halopedia.org/Guardian',
+                url: 'https://www.halopedia.org/Guardian_(map)',
                 imageUrl: new URL('../images/Halo 3/Guardian.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 6
             }, {
                 name: 'Heretic',
                 url: 'https://www.halopedia.org/Heretic',
                 imageUrl: new URL('../images/Halo 3/Heretic.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 8
             }, {
                 name: 'High Ground',
                 url: 'https://www.halopedia.org/High_Ground',
                 imageUrl: new URL('../images/Halo 3/High Ground.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Isolation',
                 url: 'https://www.halopedia.org/Isolation',
                 imageUrl: new URL('../images/Halo 3/Isolation.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 10
             }, {
                 name: 'Last Resort',
                 url: 'https://www.halopedia.org/Last_Resort',
                 imageUrl: new URL('../images/Halo 3/Last Resort.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Longshore',
                 url: 'https://www.halopedia.org/Longshore',
                 imageUrl: new URL('../images/Halo 3/Longshore.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Narrows',
                 url: 'https://www.halopedia.org/Narrows',
                 imageUrl: new URL('../images/Halo 3/Narrows.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 2,
+                maxPlayers: 8
             }, {
                 name: 'Orbital',
                 url: 'https://www.halopedia.org/Orbital',
                 imageUrl: new URL('../images/Halo 3/Orbital.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Rat\'s Nest',
                 url: 'https://www.halopedia.org/Rat%27s_Nest',
                 imageUrl: new URL('../images/Halo 3/Rat\'s Nest.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 6,
+                maxPlayers: 16
             }, {
                 name: 'Sandbox',
                 url: 'https://www.halopedia.org/Sandbox',
                 imageUrl: new URL('../images/Halo 3/Sandbox.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 12,
+                maxPlayers: 4
             }, {
                 name: 'Sandtrap',
                 url: 'https://www.halopedia.org/Sandtrap',
@@ -686,8 +686,8 @@ export const data = {
                 name: 'Monolith',
                 url: 'https://www.halopedia.org/Monolith',
                 imageUrl: new URL('../images/Halo 4/Monolith.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 12
             }, {
                 name: 'Outcast',
                 url: 'https://www.halopedia.org/Outcast',
@@ -704,8 +704,8 @@ export const data = {
                 name: 'Pitfall',
                 url: 'https://www.halopedia.org/Pitfall',
                 imageUrl: new URL('../images/Halo 4/Pitfall.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 10
             }, {
                 name: 'Ragnarok',
                 url: 'https://www.halopedia.org/Ragnarok',
@@ -728,8 +728,8 @@ export const data = {
                 name: 'Skyline',
                 url: 'https://www.halopedia.org/Skyline_(level)',
                 imageUrl: new URL('../images/Halo 4/Skyline.jpg', import.meta.url).href,
-                minPlayers: 999,
-                maxPlayers: 999
+                minPlayers: 4,
+                maxPlayers: 14
             }, {
                 name: 'Solace',
                 url: 'https://www.halopedia.org/Solace',
