@@ -10,7 +10,7 @@
 	<div class="title-bar">
 		<div class="title">
 			{map.name}
-			<!-- <a class="halopedia-link" href={map.url} target="_blank" rel="noreferrer">&#8505;</a> -->
+			<a class="halopedia-link" href={map.url} target="_blank" rel="noreferrer">&#8505;</a>
 		</div>
 		<div class="map-info">
 			<i>{map.minPlayers}-{map.maxPlayers} players</i>
@@ -71,13 +71,15 @@
 	}
 
 	.halopedia-link {
-		float: right;
+		position: absolute;
+		right: 3px;
+		top: 0;
 		border-radius: 50px;
 		background-color: white;
 		color: black;
-		font-size: 0.9em;
-		width: 18px;
-		height: 18px;
+		font-size: 0.8em;
+		width: 16px;
+		height: 16px;
 		overflow: hidden;
 		margin-top: 3px;
 		text-decoration: none;
