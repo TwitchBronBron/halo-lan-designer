@@ -1,16 +1,13 @@
 <script lang="ts">
-	import GamePicker from '$lib/components/GamePicker.svelte';
-	import { data, type Game, type Map } from '$lib/data';
-	import MapPicker from '$lib/components/MapPicker.svelte';
-	import ModePicker from '$lib/components/ModePicker.svelte';
+	import { authService } from '$lib/services/authService';
 
-	let selectedGame: Game;
-	function setSelectedGames(event: CustomEvent<Game[]>) {
-		selectedGame = event.detail[0];
+	function signIn() {
+		authService.signIn();
 	}
 </script>
 
 <a href="/create">Create</a>
+<button on:click={signIn}>Sign in</button>
 
 <style>
 </style>

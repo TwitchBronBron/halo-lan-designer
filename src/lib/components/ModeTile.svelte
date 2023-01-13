@@ -42,6 +42,6 @@
 	}
 
 	.selected {
-		background-color: var(--success-color);
+		background-color: var(--primary);
 	}
 </style>

@@ -74,7 +74,7 @@
 	}
 
 	.selected {
-		background-color: var(--success-color);
+		background-color: var(--primary);
 		border-radius: 5px;
 	}
 
