@@ -15,8 +15,6 @@
 <style>
 	.mode {
 		display: inline-block;
-		/* border: 1px solid grey; */
-		/* background-color: #061011; */
 		border-radius: 5px;
 		vertical-align: middle;
 		padding: 3px;
@@ -29,7 +27,7 @@
 	.name {
 		position: absolute;
 		font-family: Arial, Helvetica, sans-serif;
-		color: #6fbaea;
+		color: var(--mcc-blue);
 		font-size: .8em;
 		bottom: 6px;
 		left: 5px

@@ -7,43 +7,48 @@
 </script>
 
 <div class="map" class:selected on:click on:keyup>
-	<div class="title-bar">
-		<div class="title">
-			{map.name}
-			<a class="halopedia-link" href={map.url} target="_blank" rel="noreferrer">&#8505;</a>
+	<div class="border">
+		<div class="title-bar">
+			<div class="title">
+				{map.name}
+				<a class="halopedia-link" href={map.url} target="_blank" rel="noreferrer">&#8505;</a>
+			</div>
 		</div>
-	</div>
-	<div class="image-container">
-		<img src={map.imageUrl} alt="{map.name} thumbnail" />
-	</div>
-	<div class="map-info">
-		<i>{map.minPlayers}-{map.maxPlayers} players</i>
-		<i>{map.game.shortName}</i>
+		<div class="image-container">
+			<img src={map.imageUrl} alt="{map.name} thumbnail" />
+		</div>
+		<div class="map-info">
+			<i>{map.minPlayers}-{map.maxPlayers} players</i>
+			<i>{map.game.shortName}</i>
+		</div>
 	</div>
 </div>
 
 <style>
 	.map {
 		display: inline-block;
-		border: 1px solid grey;
-		background-color: #353535;
-		border-radius: 5px;
 		vertical-align: middle;
 		margin: 5px;
-		width: 170px;
-		height: 140px;
+		padding: 5px;
+		width: 180px;
 		overflow: hidden;
 		cursor: pointer;
 		position: relative;
 	}
+
+	.border {
+		border: 2px solid var(--mcc-blue);
+		background-color: var(--dark-color);
+	}
+
 	.title-bar {
 		color: white;
 		text-align: center;
 		font-weight: bold;
 		display: block;
 		/* height: 20px; */
-		padding-right: 5px;
-		padding-left: 3px;
+		padding-bottom: 2px;
+		padding-top: 2px;
 		position: relative;
 	}
 
@@ -70,6 +75,7 @@
 
 	.selected {
 		background-color: var(--success-color);
+		border-radius: 5px;
 	}
 
 	.halopedia-link {

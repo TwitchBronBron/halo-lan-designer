@@ -1,9 +1,10 @@
 :root {
     --success-color: #037c00;
-    --dark: #242424;
+    --dark-color: #050F11;
+    --mcc-blue: #6fbaea;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 

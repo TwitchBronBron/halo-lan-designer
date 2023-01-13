@@ -5,25 +5,32 @@
 	export let selected = true;
 </script>
 
-<div class="game" class:selected on:click>
-	<span class="name">{game.name}</span>
-	<img src={game.imageUrl} alt="{game.name} poster" />
+<div class="wrapper" class:selected >
+	<div class="game"on:click>
+		<span class="name">{game.name}</span>
+		<img src={game.imageUrl} alt="{game.name} poster" />
+	</div>
 </div>
 
 <style>
 	.game {
 		display: inline-block;
 		width: 100px;
-		background-color: #2c2c2c;
+		background-color: var(--dark-color);
+		border: 2px solid var(--mcc-blue);
 		color: white;
-		margin: 2px;
 		padding: 5px;
 		padding-bottom: 0px;
-		border-radius: 5px;
 		cursor: pointer;
 	}
 	img {
 		width: 100%;
+	}
+
+	.wrapper {
+		display: inline-block;
+		padding: 5px;
+		margin: 5px;
 	}
 
 	.name {
@@ -32,5 +39,6 @@
 	}
 	.selected {
 		background-color: var(--success-color);
+		border-radius: 5px;
 	}
 </style>
