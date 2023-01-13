@@ -120,7 +120,34 @@ export const data = {
             minPlayers: 2,
             maxPlayers: 8
         }],
-        gameModes: []
+        modes: [{
+            name: 'FFA Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
+        }, {
+            name: 'Team Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
+        }, {
+            name: 'Phantom Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
+        }, {
+            name: 'Elimination',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
+        }, {
+            name: 'CTF 2 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
+        }, {
+            name: 'Assault',
+            imageUrl: new URL('../images/modes/assault.png', import.meta.url).href
+        }, {
+            name: 'FFA Oddball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
+        }, {
+            name: 'Team Oddball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
+        }, {
+            name: 'King Of The Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
+        }]
     }, {
         name: 'Halo 2',
         url: 'https://www.halopedia.org/Halo_2',
@@ -278,22 +305,45 @@ export const data = {
             maxPlayers: 999
         },
         ],
-        gameModes: [{
-            name: 'Team Slayer'
+        modes: [{
+            name: 'FFA Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
-            name: 'SWAT'
+            name: 'Team Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
-            name: 'Team Oddball'
+            name: 'Elimination',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
-            name: 'Team Fiestaball'
+            name: 'SWAT',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
-            name: 'CTF 2 Flag'
+            name: 'Team Oddball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
         }, {
-            name: 'CTF 1 Flag'
+            name: 'Team Fiestaball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
         }, {
-            name: 'Team King of the Hill'
+            name: 'CTF 2 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
         }, {
-            name: 'Crazy King of the Hill'
+            name: 'CTF 1 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
+        }, {
+            name: 'FFA King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
+        }, {
+            name: 'Team King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
+        }, {
+            name: 'FFA Crazy King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
+        }, {
+            name: 'Team Crazy King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
+        }, {
+            name: 'Juggernaut',
+            imageUrl: new URL('../images/modes/juggernaut.png', import.meta.url).href
         }]
     }, {
         name: 'Halo 2:A',
@@ -347,22 +397,33 @@ export const data = {
             minPlayers: 999,
             maxPlayers: 999
         }],
-        gameModes: [{
+        modes: [{
             name: 'Team Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
             name: 'Team SWAT',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
             name: 'Team Oddball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
         }, {
             name: 'Team Fiestaball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
         }, {
             name: 'CTF 2 Flags',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
         }, {
             name: 'CTF 1 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
         }, {
             name: 'Team King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
         }, {
             name: 'Crazy King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
+        }, {
+            name: 'Ricochet',
+            imageUrl: new URL('../images/modes/ricochet.png', import.meta.url).href
         }]
     }, {
         name: 'Halo 3',
@@ -516,7 +577,7 @@ export const data = {
                 maxPlayers: 16
             },
         ],
-        gameModes: [{
+        modes: [{
             name: 'Team Slayer',
         }, {
             name: 'Slayer Duel',
@@ -695,7 +756,7 @@ export const data = {
                 maxPlayers: 16
             },
         ],
-        gameModes: [{
+        modes: [{
             name: 'Slayer Free For All',
         }, {
             name: 'Team Slayer',
@@ -734,7 +795,7 @@ export interface Game {
      */
     imageUrl: string;
     maps: Map[];
-    gameModes: GameMode[]
+    modes: GameMode[]
 }
 
 export interface Map {
@@ -760,4 +821,5 @@ export interface Map {
 
 export interface GameMode {
     name: string;
+    imageUrl: string;
 }

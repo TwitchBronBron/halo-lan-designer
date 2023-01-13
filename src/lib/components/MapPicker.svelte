@@ -3,13 +3,20 @@
 	import MapTile from './MapTile.svelte';
 	import { createEventDispatcher } from 'svelte';
 
-	const dispatch = createEventDispatcher();
-
 	export let maps: Map[];
+	/**
+	 * Should more than one map be selectable?
+	 */
+	export let multi = false;
+
+	const dispatch = createEventDispatcher();
 
 	let selection = new Set<Map>();
 
 	function toggleSelection(game: Map) {
+		if (!multi) {
+			selection.clear();
+		}
 		if (selection.has(game)) {
 			selection.delete(game);
 		} else {
@@ -34,11 +41,15 @@
 <div>
 	<div>
 		Pick maps ({selection.size} selected)
-		<button on:click={selectAll} disabled={selection.size === maps.length}>All</button>
-		<button on:click={selectNone} disabled={selection.size === 0}>None</button>
+		{#if multi}
+			<button on:click={selectAll} disabled={selection.size === maps.length}>All</button>
+			<button on:click={selectNone} disabled={selection.size === 0}>None</button>
+		{/if}
 	</div>
 
-	{#each maps as map}
-		<MapTile {map} on:click={() => toggleSelection(map)} selected={selection.has(map)} />
-	{/each}
+	{#if maps}
+		{#each maps as map}
+			<MapTile {map} on:click={() => toggleSelection(map)} selected={selection.has(map)} />
+		{/each}
+	{/if}
 </div>

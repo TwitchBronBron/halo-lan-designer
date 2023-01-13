@@ -2,23 +2,18 @@
 	import GamePicker from '$lib/components/GamePicker.svelte';
 	import { data, type Game, type Map } from '$lib/data';
 	import MapPicker from '$lib/components/MapPicker.svelte';
+	import ModePicker from '$lib/components/ModePicker.svelte';
 
-	let selectedGames: Game[];
+	let selectedGame: Game;
 	function setSelectedGames(event: CustomEvent<Game[]>) {
-		selectedGames = event.detail;
+		selectedGame = event.detail[0];
 	}
 
-    let maps: Map[];
-	$: {
-		maps = (selectedGames ?? []).map((x) => x.maps).flat();
-        console.log(maps);
-	}
+	let maps: Map[];
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<GamePicker games={data.games} multi={false} on:selectionChange={setSelectedGames} />
 
-<GamePicker games={data.games} on:selectionChange={setSelectedGames} />
-<!-- <MapPicker games={ -->
+<ModePicker modes={selectedGame?.modes} />
 
-<MapPicker {maps} />
+<MapPicker maps={selectedGame?.maps} multi={false} />
