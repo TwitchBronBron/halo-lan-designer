@@ -39,8 +39,7 @@
 </script>
 
 <div>
-	Pick game modes ({selection.size} selected)
-	{#if multi}
+	Pick game mode{#if multi}s ({selection.size} selected)
 		<button on:click={selectAll} disabled={selection.size === modes.length}>All</button>
 		<button on:click={selectNone} disabled={selection.size === 0}>None</button>
 	{/if}

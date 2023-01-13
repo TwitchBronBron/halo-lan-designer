@@ -10,7 +10,11 @@
 	}
 </script>
 
-<a href="/create">Create</a>
+<GamePicker games={data.games} multi={false} on:selectionChange={setSelectedGames} />
+
+<ModePicker modes={selectedGame?.modes} />
+
+<MapPicker maps={selectedGame?.maps} multi={false} />
 
 <style>
 </style>
