@@ -26,27 +26,9 @@
 		selection = selection;
 		dispatch('selectionChange', [...selection]);
 	}
-
-	function selectAll() {
-		selection = new Set(maps);
-		dispatch('selectionChange', [...selection]);
-	}
-
-	function selectNone() {
-		selection = new Set();
-		dispatch('selectionChange', [...selection]);
-	}
 </script>
 
 <div>
-	<div>
-		Pick maps ({selection.size} selected)
-		{#if multi}
-			<button on:click={selectAll} disabled={selection.size === maps.length}>All</button>
-			<button on:click={selectNone} disabled={selection.size === 0}>None</button>
-		{/if}
-	</div>
-
 	{#if maps}
 		{#each maps as map}
 			<MapTile {map} on:click={() => toggleSelection(map)} selected={selection.has(map)} />

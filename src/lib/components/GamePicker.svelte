@@ -40,15 +40,6 @@
 </script>
 
 <div>
-	<div>
-		Pick game{#if multi}s{/if}
-		{#if multi}
-			({selection.size} selected)
-			<button on:click={selectAll} disabled={selection.size === games.length}>All</button>
-			<button on:click={selectNone} disabled={selection.size === 0}>None</button>
-		{/if}
-	</div>
-
 	{#each games as game}
 		<GameTile {game} on:click={() => toggleSelection(game)} selected={selection.has(game)} />
 	{/each}

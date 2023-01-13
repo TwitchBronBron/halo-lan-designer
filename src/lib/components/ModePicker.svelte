@@ -26,29 +26,15 @@
 		selection = selection;
 		dispatch('selectionChange', [...selection]);
 	}
-
-	function selectAll() {
-		selection = new Set(modes);
-		dispatch('selectionChange', [...selection]);
-	}
-
-	function selectNone() {
-		selection = new Set();
-		dispatch('selectionChange', [...selection]);
-	}
 </script>
 
 <div>
-	Pick game mode{#if multi}s ({selection.size} selected)
-		<button on:click={selectAll} disabled={selection.size === modes.length}>All</button>
-		<button on:click={selectNone} disabled={selection.size === 0}>None</button>
+	{#if modes}
+		{#each modes as mode}
+			<ModeTile {mode} on:click={() => toggleSelection(mode)} selected={selection.has(mode)} />
+		{/each}
 	{/if}
 </div>
-{#if modes}
-	{#each modes as mode}
-		<ModeTile {mode} on:click={() => toggleSelection(mode)} selected={selection.has(mode)} />
-	{/each}
-{/if}
 
 <style>
 </style>
