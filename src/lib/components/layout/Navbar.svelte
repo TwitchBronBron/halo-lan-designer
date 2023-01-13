@@ -21,7 +21,7 @@
 
 <div class="container">
 	<div class="navbar">
-		<span>Halo Lan Designer</span>
+		<a class="logo" href="/">Halo Lan Designer</a>
 		<div class="profile-button" on:click={toggleProfileMenu} on:keyup>
 			{#if user}
 				<span>{user.email}</span>
@@ -46,6 +46,13 @@
 	.container {
 		position: relative;
 	}
+	.logo {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1.3em;
+		text-decoration: none;
+		color: inherit;
+		font-weight: bold;
+	}
 	.navbar {
 		position: relative;
 		width: 100%;
@@ -69,6 +76,7 @@
 		min-width: 150px;
 		padding: 10px;
 		border-radius: 3px;
+		z-index: 1000;
 	}
 
 	.profile-button {

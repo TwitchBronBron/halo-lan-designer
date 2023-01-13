@@ -20,6 +20,7 @@
 		padding: 3px;
 		margin: 5px;
 		width: 200px;
+		padding-bottom: 0px;
 		overflow: hidden;
 		cursor: pointer;
 		position: relative;
@@ -28,9 +29,9 @@
 		position: absolute;
 		font-family: Arial, Helvetica, sans-serif;
 		color: var(--mcc-blue);
-		font-size: .8em;
+		font-size: 0.8em;
 		bottom: 6px;
-		left: 5px
+		left: 5px;
 	}
 
 	.image-container {
