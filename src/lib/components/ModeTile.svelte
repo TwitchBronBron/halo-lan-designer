@@ -6,12 +6,8 @@
 </script>
 
 <div class="mode" class:selected on:click on:keyup>
-	<div class="title-bar">
-		<div class="title">
-			{mode.name}
-		</div>
-	</div>
 	<div class="image-container">
+		<span class="name">{mode.name}</span>
 		<img src={mode.imageUrl} alt="{mode.name} thumbnail" />
 	</div>
 </div>
@@ -19,27 +15,24 @@
 <style>
 	.mode {
 		display: inline-block;
-		border: 1px solid grey;
-		background-color: #061011;
+		/* border: 1px solid grey; */
+		/* background-color: #061011; */
 		border-radius: 5px;
 		vertical-align: middle;
-		padding: 2px;
+		padding: 3px;
 		margin: 5px;
 		width: 200px;
-		height: 134px;
 		overflow: hidden;
 		cursor: pointer;
 		position: relative;
 	}
-	.title-bar {
-		color: white;
-		text-align: center;
-		font-weight: bold;
-		display: block;
-		/* height: 20px; */
-		padding-right: 5px;
-		padding-left: 3px;
-		position: relative;
+	.name {
+		position: absolute;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #6fbaea;
+		font-size: .8em;
+		bottom: 6px;
+		left: 5px
 	}
 
 	.image-container {
