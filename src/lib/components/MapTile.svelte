@@ -12,13 +12,13 @@
 			{map.name}
 			<a class="halopedia-link" href={map.url} target="_blank" rel="noreferrer">&#8505;</a>
 		</div>
-		<div class="map-info">
-			<i>{map.minPlayers}-{map.maxPlayers} players</i>
-			<i>{map.game.shortName}</i>
-		</div>
 	</div>
 	<div class="image-container">
 		<img src={map.imageUrl} alt="{map.name} thumbnail" />
+	</div>
+	<div class="map-info">
+		<i>{map.minPlayers}-{map.maxPlayers} players</i>
+		<i>{map.game.shortName}</i>
 	</div>
 </div>
 
@@ -31,7 +31,7 @@
 		vertical-align: middle;
 		margin: 5px;
 		width: 170px;
-		height: 134px;
+		height: 140px;
 		overflow: hidden;
 		cursor: pointer;
 		position: relative;
@@ -55,6 +55,8 @@
 		width: 100%;
 		text-align: left;
 		font-weight: normal;
+		padding-left: 5px;
+		padding-right: 5px;
 		display: flex;
 		justify-content: space-between;
 	}
