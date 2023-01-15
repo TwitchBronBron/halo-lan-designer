@@ -4,6 +4,7 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { GoogleAuthProvider, getAuth } from "firebase/auth";
 import { authService } from './services/authService';
+import { db } from './db';
 
 const firebaseConfig = {
     apiKey: 'AIzaSyAQcmwWlCbv9yNfwJKU0mctt8KQddP7F7s',
@@ -17,11 +18,13 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-// export const analytics = getAnalytics(app);
-export const db = getFirestore(app);
 
 export const authProvider = new GoogleAuthProvider();
 authProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 export const auth = getAuth();
 auth.useDeviceLanguage();
 authService.init(auth, authProvider);
+
+// export const analytics = getAnalytics(app);
+export const firestore = getFirestore(app);
+db.init(firestore, authService);

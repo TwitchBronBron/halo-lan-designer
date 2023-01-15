@@ -1,7 +1,7 @@
 import { signInWithPopup, GoogleAuthProvider, type User, type Auth, type AuthProvider, signOut } from "firebase/auth";
 import { writable } from 'svelte/store';
 
-class AuthService {
+export class AuthService {
 
     constructor(
 
