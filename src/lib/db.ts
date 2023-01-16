@@ -1,4 +1,4 @@
-import { addDoc, collection, doc, getDocs, query, where, onSnapshot, type Firestore, type WhereFilterOp } from "firebase/firestore";
+import { addDoc, collection, doc, getDocs, query, where, onSnapshot, type Firestore, type WhereFilterOp, QueryFieldFilterConstraint, FieldPath, documentId } from "firebase/firestore";
 import type { AuthService } from "./services/authService";
 
 export class Db {
@@ -25,9 +25,9 @@ export class Db {
         return docRef;
     }
 
-    private observe<T>(collectionName: CollectionName, filter: [string, WhereFilterOp, unknown], callback: (data: T[]) => void) {
+    private observe<T>(collectionName: CollectionName, filter: QueryFieldFilterConstraint, callback: (data: T[]) => void) {
         const eventsRef = collection(this.db, collectionName);
-        const q = query(eventsRef, where(...filter));
+        const q = query(eventsRef, filter);
         return onSnapshot(q, (snapshot) => {
             callback(
                 snapshot.docs.map(x => ({
@@ -38,15 +38,25 @@ export class Db {
         });
     }
 
-    public observeEvents(callback: (data: Event[]) => void) {
-        return this.observe('events', ['ownerId', '==', this.authService.user?.uid], callback);
+    public observeEvent(id: string, callback: (data: GamingEvent) => void) {
+        return this.observe<GamingEvent>('events', where(documentId(), '==', id), (events) => {
+            callback(events[0]);
+        });
+    }
+
+    public observeEvents(callback: (data: GamingEvent[]) => void) {
+        return this.observe('events', where('ownerId', '==', this.authService.user?.uid), callback);
     }
 }
 export const db = new Db();
 
 export type CollectionName = 'events';
 
-export interface Event {
+export interface GamingEvent {
+    /**
+     * The id for this event
+     */
+    id: string;
     name: string,
     createdDate: Date,
     modifiedDate: Date,

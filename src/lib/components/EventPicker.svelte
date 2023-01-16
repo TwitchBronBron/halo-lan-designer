@@ -1,11 +1,11 @@
 <script lang="ts">
-	import Event from './Event.svelte';
+	import EventCard from './EventCard.svelte';
 	export let events: any[] = [];
 
 </script>
 
 <div>
 	{#each events as event}
-		<Event {event} />
+		<EventCard {event} />
 	{/each}
 </div>

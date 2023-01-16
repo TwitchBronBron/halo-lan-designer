@@ -1,9 +1,10 @@
 <script lang="ts">
 	import EventPicker from '$lib/components/EventPicker.svelte';
 	import Grouping from '$lib/components/layout/Grouping.svelte';
-	import { db, type Event } from '$lib/db';
+	import { db } from '$lib/db';
 	import { authService } from '$lib/services/authService';
-
+	import { onDestroy } from 'svelte';
+	const subscriptions: Array<() => void> = [];
 	function signIn() {
 		authService.signIn();
 	}
@@ -12,9 +13,11 @@
 	authService.store.isLoggedIn.subscribe(async (value) => {
 		if (value) {
 			isLoggedIn = value;
-			db.observeEvents((data) => {
-				events = data;
-			});
+			subscriptions.push(
+				db.observeEvents((data) => {
+					events = data;
+				})
+			);
 		}
 	});
 
@@ -25,6 +28,10 @@
 		}
 		await db.createEvent(name);
 	}
+
+	onDestroy(() => {
+		subscriptions.forEach((x) => x());
+	});
 </script>
 
 {#if isLoggedIn}
