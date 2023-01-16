@@ -1,4 +1,4 @@
-import { addDoc, collection, doc, getDocs, query, where, type Firestore } from "firebase/firestore";
+import { addDoc, collection, doc, getDocs, query, where, onSnapshot, type Firestore, type WhereFilterOp } from "firebase/firestore";
 import type { AuthService } from "./services/authService";
 
 export class Db {
@@ -19,22 +19,38 @@ export class Db {
                 modifiedDate: new Date(),
                 ownerId: this.authService.user?.uid,
                 //list of users who are allowed to edit this event
-                contributors: []
+                contributorIds: []
             }
         );
         return docRef;
     }
 
-    async getEvents() {
-        const eventsRef = collection(this.db, 'events');
-        const q = query(eventsRef, where('ownerId', '==', this.authService.user?.uid));
-        const querySnapshot = await getDocs(q);
-        return querySnapshot.docs.map(x => {
-            return {
-                id: x.id,
-                ...x.data() ?? {}
-            };
+    private observe<T>(collectionName: CollectionName, filter: [string, WhereFilterOp, unknown], callback: (data: T[]) => void) {
+        const eventsRef = collection(this.db, collectionName);
+        const q = query(eventsRef, where(...filter));
+        return onSnapshot(q, (snapshot) => {
+            callback(
+                snapshot.docs.map(x => ({
+                    id: x.id,
+                    ...x.data() ?? {}
+                } as any))
+            );
         });
+    }
+
+    public observeEvents(callback: (data: Event[]) => void) {
+        return this.observe('events', ['ownerId', '==', this.authService.user?.uid], callback);
     }
 }
 export const db = new Db();
+
+export type CollectionName = 'events';
+
+export interface Event {
+    name: string,
+    createdDate: Date,
+    modifiedDate: Date,
+    ownerId: string;
+    //list of IDs of users who are allowed to edit this event
+    contributorIds: string[];
+}

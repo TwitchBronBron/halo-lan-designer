@@ -1,7 +1,7 @@
 <script lang="ts">
 	import EventPicker from '$lib/components/EventPicker.svelte';
 	import Grouping from '$lib/components/layout/Grouping.svelte';
-	import { db } from '$lib/db';
+	import { db, type Event } from '$lib/db';
 	import { authService } from '$lib/services/authService';
 
 	function signIn() {
@@ -12,7 +12,9 @@
 	authService.store.isLoggedIn.subscribe(async (value) => {
 		if (value) {
 			isLoggedIn = value;
-			events = await db.getEvents();
+			db.observeEvents((data) => {
+				events = data;
+			});
 		}
 	});
 

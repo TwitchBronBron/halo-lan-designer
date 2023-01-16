@@ -1,6 +1,7 @@
 <script lang="ts">
-	import Event from './event.svelte';
+	import Event from './Event.svelte';
 	export let events: any[] = [];
+
 </script>
 
 <div>
