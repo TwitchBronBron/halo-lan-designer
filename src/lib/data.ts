@@ -579,24 +579,34 @@ export const data = {
         ],
         modes: [{
             name: 'Team Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
             name: 'Slayer Duel',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
             name: 'CTF 2 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
         }, {
             name: 'CTF 1 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
         }, {
             name: 'Team King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
         }, {
             name: 'Crazy King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
         }, {
             name: 'Team Oddball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
         }, {
             name: 'Ninjaball',
+            imageUrl: new URL('../images/modes/oddball.png', import.meta.url).href
         }, {
             name: 'Infection Classic',
+            imageUrl: new URL('../images/modes/infection.png', import.meta.url).href
         }, {
             name: 'Infection Alpha Zombie',
+            imageUrl: new URL('../images/modes/infection.png', import.meta.url).href
         }],
     }, {
         name: 'Halo 4',
@@ -758,18 +768,25 @@ export const data = {
         ],
         modes: [{
             name: 'Slayer Free For All',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
             name: 'Team Slayer',
+            imageUrl: new URL('../images/modes/slayer.png', import.meta.url).href
         }, {
             name: 'CTF 2 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
         }, {
             name: 'CTF 1 Flag',
+            imageUrl: new URL('../images/modes/ctf.png', import.meta.url).href
         }, {
             name: 'Team King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
         }, {
             name: 'Crazy King of the Hill',
+            imageUrl: new URL('../images/modes/king-of-the-hill.png', import.meta.url).href
         }, {
             name: 'Flood',
+            imageUrl: new URL('../images/modes/infection.png', import.meta.url).href
         }],
     }] as Game[]
 };
