@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Game } from '$lib/data';
+	import type { Game } from '$lib/library';
 	import GameTile from './GameTile.svelte';
 	import { createEventDispatcher } from 'svelte';
 

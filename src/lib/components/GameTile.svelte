@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Game } from '$lib/data';
+	import type { Game } from '$lib/library';
 
 	export let game: Game;
 	export let selected = true;

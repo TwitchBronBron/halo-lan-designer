@@ -1,4 +1,5 @@
-import { addDoc, collection, doc, getDocs, query, where, onSnapshot, type Firestore, type WhereFilterOp, QueryFieldFilterConstraint, FieldPath, documentId } from "firebase/firestore";
+import { addDoc, collection, doc, getDocs, query, where, onSnapshot, type Firestore, type WhereFilterOp, QueryFieldFilterConstraint, FieldPath, documentId, arrayUnion, updateDoc } from "firebase/firestore";
+import type { Game, GameMode, GameMap } from "./library";
 import type { AuthService } from "./services/authService";
 
 export class Db {
@@ -19,10 +20,21 @@ export class Db {
                 modifiedDate: new Date(),
                 ownerId: this.authService.user?.uid,
                 //list of users who are allowed to edit this event
-                contributorIds: []
+                contributorIds: [],
+                //list of matches for this event
+                matches: []
             }
         );
         return docRef;
+    }
+
+    async createMatch(eventId: string, match: { gameId: string; modeId: string; mapId: string }) {
+        await updateDoc(
+            doc(this.db, 'events', eventId),
+            {
+                matches: arrayUnion(match)
+            }
+        );
     }
 
     private observe<T>(collectionName: CollectionName, filter: QueryFieldFilterConstraint, callback: (data: T[]) => void) {
@@ -63,4 +75,11 @@ export interface GamingEvent {
     ownerId: string;
     //list of IDs of users who are allowed to edit this event
     contributorIds: string[];
+    matches: GameMatch[];
+}
+
+export interface GameMatch {
+    gameId: string;
+    modeId: string;
+    mapId: string;
 }

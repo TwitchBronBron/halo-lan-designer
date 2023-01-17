@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { GameMode, Map } from '$lib/data';
+	import type { GameMode, GameMap } from '$lib/library';
 	import { createEventDispatcher } from 'svelte';
 	import ModeTile from './ModeTile.svelte';
 
@@ -7,7 +7,7 @@
 	/**
 	 * Should more than one map be selectable?
 	 */
-	export let multi = false;
+	export let multi = true;
 
 	const dispatch = createEventDispatcher();
 

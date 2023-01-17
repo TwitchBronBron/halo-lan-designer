@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Game, GameMode, Map } from '$lib/data';
+	import type { Game, GameMode, GameMap } from '$lib/library';
 
 	export let mode: GameMode;
 	export let selected = false;

@@ -13,7 +13,7 @@
 		border: 1px solid #999999;
 		border-radius: 5px;
 		position: relative;
-		margin-top: 5px;
+		margin-top: 15px;
 		margin-bottom: 20px;
 	}
 

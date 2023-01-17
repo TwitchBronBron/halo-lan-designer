@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Game, Map } from '$lib/data';
+	import type { Game, GameMap } from '$lib/library';
 	import GameTile from './GameTile.svelte';
 
-	export let map: Map;
+	export let map: GameMap;
 	export let selected = true;
 </script>
 

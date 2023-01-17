@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { Game, Map } from '$lib/data';
+	import type { Game, GameMap } from '$lib/library';
 	import MapTile from './MapTile.svelte';
 	import { createEventDispatcher } from 'svelte';
 
-	export let maps: Map[];
+	export let maps: GameMap[];
 	/**
 	 * Should more than one map be selectable?
 	 */
@@ -11,9 +11,9 @@
 
 	const dispatch = createEventDispatcher();
 
-	let selection = new Set<Map>();
+	let selection = new Set<GameMap>();
 
-	function toggleSelection(game: Map) {
+	function toggleSelection(game: GameMap) {
 		if (!multi) {
 			selection.clear();
 		}

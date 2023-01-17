@@ -2,12 +2,25 @@
     --primary: #037c00;
     --background-color: #121313;
     --background-color-alt: #282929;
+    --text-color: white;
     --dark-color: #050F11;
     --mcc-blue: #6fbaea;
 }
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: auto;
+}
+
+h1 {
+    color: var(--text-color);
 }
 
 html,
@@ -17,7 +30,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 button {

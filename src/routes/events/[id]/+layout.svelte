@@ -21,6 +21,6 @@
 </script>
 
 {#if event}
-	<h1>{event.name}</h1>
+	<a href="/events/{event?.id}"><h1>{event.name}</h1></a>
 {/if}
 <slot />
