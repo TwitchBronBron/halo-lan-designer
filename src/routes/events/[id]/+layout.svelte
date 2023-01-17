@@ -20,4 +20,7 @@
 	}
 </script>
 
-<a class="pure-button button-primary" href="/events/{event?.id}/add">&plus;&nbsp;Add</a>
+{#if event}
+	<h1>{event.name}</h1>
+{/if}
+<slot />

@@ -5,21 +5,25 @@
 	import { authService } from '$lib/services/authService';
 	import { onDestroy } from 'svelte';
 	const subscriptions: Array<() => void> = [];
+
 	function signIn() {
 		authService.signIn();
 	}
+
 	let isLoggedIn = false;
 	let events: any[];
-	authService.store.isLoggedIn.subscribe(async (value) => {
-		if (value) {
-			isLoggedIn = value;
-			subscriptions.push(
-				db.observeEvents((data) => {
-					events = data;
-				})
-			);
-		}
-	});
+	onDestroy(
+		authService.store.isLoggedIn.subscribe(async (value) => {
+			if (value) {
+				isLoggedIn = value;
+				subscriptions.push(
+					db.observeEvents((data) => {
+						events = data;
+					})
+				);
+			}
+		})
+	);
 
 	async function createEvent() {
 		let name = prompt('Enter the name of the event');

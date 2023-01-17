@@ -56,8 +56,9 @@
 	.navbar {
 		position: relative;
 		width: 100%;
-		background-color: var(--dark-color);
-		color: var(--mcc-blue);
+		background-color: var(--mcc-blue);
+		color: white;
+		font-weight: bold;
 		padding-top: 15px;
 		padding: 10px;
 
@@ -71,7 +72,7 @@
 		top: 40px;
 		right: 10px;
 		border: 1px solid var(--mcc-blue);
-		background-color: white;
+		background-color: black;
 		color: black;
 		min-width: 150px;
 		padding: 10px;
@@ -97,7 +98,7 @@
 	}
 
 	.icon.logged-in {
-		color: green;
+		color: var(--primary);
 	}
 	button {
 		cursor: pointer;

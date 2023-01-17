@@ -1,6 +1,7 @@
 :root {
     --primary: #037c00;
-    --background-color: #121212;
+    --background-color: #121313;
+    --background-color-alt: #282929;
     --dark-color: #050F11;
     --mcc-blue: #6fbaea;
 }
@@ -15,7 +16,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: var(--background-color);
     color: #FFFFFF;
 }
 
@@ -25,4 +26,29 @@ button {
 
 .clearfix {
     clear: both;
+}
+
+.button-primary,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-primary {
+    background: var(--primary);
+}
+
+.button-error {
+    background: rgb(202, 60, 60);
+}
+
+.button-warning {
+    background: rgb(223, 117, 20);
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221);
 }

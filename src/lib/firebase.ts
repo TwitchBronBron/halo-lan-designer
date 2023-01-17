@@ -21,6 +21,10 @@ export const app = initializeApp(firebaseConfig);
 
 export const authProvider = new GoogleAuthProvider();
 authProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+authProvider.setCustomParameters({
+    prompt: "select_account"
+  });
+
 export const auth = getAuth();
 auth.useDeviceLanguage();
 authService.init(auth, authProvider);

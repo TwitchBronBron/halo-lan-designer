@@ -1,6 +1,7 @@
 <div class="section">
 	<span class="title">
-		<slot name="title" />
+		<div class="title-backer" />
+		<span class="title-text"><slot name="title" /></span>
 	</span>
 	<div class="content">
 		<slot />
@@ -20,14 +21,28 @@
 		position: absolute;
 		color: var(--mcc-blue);
 		display: inline-block;
-		background-color: var(--background-color);
-		padding-left: 3px;
-		padding-right: 3px;
+		/* background-color: var(--background-color-alt); */
+		padding-left: 2px;
+		padding-right: 2px;
 		top: -10px;
 		left: 20px;
+	}
+	.title-text {
+		position: relative;
+		z-index: 10;
+	}
+	.title-backer {
+		position: absolute;
+		top: 9px;
+		border-top: 1px solid var(--background-color-alt);
+		margin-left: -2px;
+		width: 100%;
+		height: 10px;
+		z-index: 0;
 	}
 
 	.content {
 		padding: 10px;
+		background-color: var(--background-color-alt);
 	}
 </style>
