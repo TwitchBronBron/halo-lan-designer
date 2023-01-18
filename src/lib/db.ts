@@ -1,5 +1,5 @@
 import { addDoc, collection, doc, getDocs, query, where, onSnapshot, type Firestore, type WhereFilterOp, QueryFieldFilterConstraint, FieldPath, documentId, arrayUnion, updateDoc } from "firebase/firestore";
-import type { Game, GameMode, GameMap } from "./library";
+import { type Game, type GameMode, type GameMap, library } from "./library";
 import type { AuthService } from "./services/authService";
 
 export class Db {
@@ -28,11 +28,15 @@ export class Db {
         return docRef;
     }
 
-    async createMatch(eventId: string, match: { gameId: string; modeId: string; mapId: string }) {
+    async createMatch(eventId: string, match: { game: Game, mode: GameMode, map: GameMap }) {
         await updateDoc(
             doc(this.db, 'events', eventId),
             {
-                matches: arrayUnion(match)
+                matches: arrayUnion({
+                    gameId: match.game.id,
+                    modeId: match.mode.id,
+                    mapId: match.map.id
+                } as GameMatchRaw)
             }
         );
     }
@@ -57,7 +61,17 @@ export class Db {
     }
 
     public observeEvents(callback: (data: GamingEvent[]) => void) {
-        return this.observe('events', where('ownerId', '==', this.authService.user?.uid), callback);
+        return this.observe<GamingEvent>('events', where('ownerId', '==', this.authService.user?.uid), (events) => {
+            //hydrate match info
+            for (const event of events ?? []) {
+                event.matches = ((event.matches ?? []) as unknown as GameMatchRaw[]).map((match) => ({
+                    game: library.getGame(match.gameId),
+                    mode: library.getMode(match.modeId),
+                    map: library.getMap(match.mapId)
+                }));
+            }
+            callback(events);
+        });
     }
 }
 export const db = new Db();
@@ -79,6 +93,12 @@ export interface GamingEvent {
 }
 
 export interface GameMatch {
+    game: Game;
+    mode: GameMode;
+    map: GameMap;
+}
+
+interface GameMatchRaw {
     gameId: string;
     modeId: string;
     mapId: string;

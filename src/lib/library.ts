@@ -1,5 +1,41 @@
-export const library = {
-    games: [
+class Library {
+
+    /**
+     * Get the game with the specified ID
+     */
+    public getGame(gameId: string): Game {
+        return this.games.find(x => x.id === gameId)!;
+    }
+
+    /**
+     * Get the map with the specified ID
+     */
+    public getMap(mapId: string): GameMap {
+        for (const game of this.games) {
+            for (const map of game.maps) {
+                if (map.id === mapId) {
+                    return map;
+                }
+            }
+        }
+        return undefined as unknown as GameMap;
+    }
+
+    /**
+     * Get the game mode with the specified ID
+     */
+    public getMode(modeId: string): GameMode {
+        for (const game of this.games) {
+            for (const mode of game.modes) {
+                if (mode.id === modeId) {
+                    return mode;
+                }
+            }
+        }
+        return undefined as unknown as GameMode;
+    }
+
+    public games = [
         {
             name: 'Halo: CE',
             id: 'H:CE',
@@ -795,6 +831,7 @@ export const library = {
             }],
         }] as Game[]
 };
+export const library = new Library();
 
 for (const game of library.games) {
     for (const map of game.maps) {

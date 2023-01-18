@@ -2,10 +2,9 @@
 	import type { Game, GameMode, GameMap } from '$lib/library';
 
 	export let mode: GameMode;
-	export let selected = false;
 </script>
 
-<div class="mode" class:selected on:click on:keyup>
+<div class="mode">
 	<div class="image-container">
 		<span class="name">{mode.name}</span>
 		<img src={mode.imageUrl} alt="{mode.name} thumbnail" />
@@ -15,14 +14,10 @@
 <style>
 	.mode {
 		display: inline-block;
-		border-radius: 5px;
 		vertical-align: middle;
-		padding: 3px;
-		margin: 5px;
-		width: 200px;
+		width: 180px;
 		padding-bottom: 0px;
 		overflow: hidden;
-		cursor: pointer;
 		position: relative;
 	}
 	.name {
@@ -30,7 +25,7 @@
 		font-family: Arial, Helvetica, sans-serif;
 		color: var(--mcc-blue);
 		font-size: 0.8em;
-		bottom: 6px;
+		bottom: 4px;
 		left: 5px;
 	}
 
@@ -42,7 +37,4 @@
 		width: 100%;
 	}
 
-	.selected {
-		background-color: var(--primary);
-	}
 </style>

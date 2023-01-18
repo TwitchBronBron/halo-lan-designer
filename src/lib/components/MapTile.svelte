@@ -1,12 +1,10 @@
 <script lang="ts">
-	import type { Game, GameMap } from '$lib/library';
-	import GameTile from './GameTile.svelte';
+	import type { GameMap } from '$lib/library';
 
 	export let map: GameMap;
-	export let selected = true;
 </script>
 
-<div class="map" class:selected on:click on:keyup>
+<div class="map">
 	<div class="border">
 		<div class="title-bar">
 			<div class="title">
@@ -28,11 +26,8 @@
 	.map {
 		display: inline-block;
 		vertical-align: middle;
-		margin: 5px;
-		padding: 5px;
 		width: 180px;
 		overflow: hidden;
-		cursor: pointer;
 		position: relative;
 	}
 
@@ -73,10 +68,6 @@
 		width: 100%;
 	}
 
-	.selected {
-		background-color: var(--primary);
-		border-radius: 5px;
-	}
 
 	.halopedia-link {
 		position: absolute;

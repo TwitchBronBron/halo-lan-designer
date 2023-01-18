@@ -1,19 +1,20 @@
 <script lang="ts">
-	import type { GameMode, GameMap } from '$lib/library';
+	import type { GameMatch } from '$lib/db';
 	import { createEventDispatcher } from 'svelte';
-	import ModeTile from './ModeTile.svelte';
+	import MatchTile from './MatchTile.svelte';
 
-	export let modes: GameMode[];
+	export let matches: GameMatch[];
+
 	/**
 	 * Should more than one map be selectable?
 	 */
-	export let multi = true;
+	export let multi = false;
 
 	const dispatch = createEventDispatcher();
 
-	let selection = new Set<GameMode>();
+	let selection = new Set<GameMatch>();
 
-	function toggleSelection(mode: GameMode) {
+	function toggleSelection(mode: GameMatch) {
 		if (!multi) {
 			selection.clear();
 		}
@@ -28,23 +29,28 @@
 	}
 </script>
 
-<div>
-	{#if modes}
-		{#each modes as mode}
+<div class="scroller">
+	{#if matches?.length > 0}
+		{#each matches as match}
 			<div
-				class="mode"
-				class:selected={selection.has(mode)}
-				on:click={() => toggleSelection(mode)}
+				class="match"
+				class:selected={selection.has(match)}
+				on:click={() => toggleSelection(match)}
 				on:keyup
 			>
-				<ModeTile {mode} />
+				<MatchTile {match} />
 			</div>
 		{/each}
 	{/if}
 </div>
 
 <style>
-	.mode {
+	.scroller {
+		white-space: nowrap;
+		overflow: auto;
+		overflow-y: hidden;
+	}
+	.match {
 		display: inline-block;
 		padding: 3px;
 		margin: 5px;

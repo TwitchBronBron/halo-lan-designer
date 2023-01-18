@@ -21,3 +21,4 @@
 </script>
 
 <a class="pure-button button-primary" href="/events/{event?.id}/add">&plus;&nbsp;Add</a>
+

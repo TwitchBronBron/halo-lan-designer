@@ -2,7 +2,7 @@
 	import { authService } from '$lib/services/authService';
 	import type { User } from 'firebase/auth';
 	import FaUserCircle from 'svelte-icons/fa/FaUserCircle.svelte';
-	let isProfileMenuVisible = false;
+	let isProfileMenuVisible = true;
 
 	function toggleProfileMenu() {
 		isProfileMenuVisible = !isProfileMenuVisible;
@@ -23,9 +23,6 @@
 	<div class="navbar">
 		<a class="logo" href="/">Halo Lan Designer</a>
 		<div class="profile-button" on:click={toggleProfileMenu} on:keyup>
-			{#if user}
-				<span>{user.email}</span>
-			{/if}
 			<div class="icon" class:logged-in={user?.email}>
 				<FaUserCircle />
 			</div>
@@ -35,9 +32,16 @@
 {#if isProfileMenuVisible}
 	<div class="profile-menu">
 		{#if !!user}
-			<button on:click={signOut} on:keyup>Sign Out</button>
+			<div class="navbar-item">
+				<span class="email">{user.email}</span>
+			</div>
+			<div class="navbar-item">
+				<button on:click={signOut} on:keyup>Sign Out</button>
+			</div>
 		{:else}
-			<button on:click={signIn} on:keyup>Sign In</button>
+			<div class="navbar-item">
+				<button on:click={signIn} on:keyup>Sign In</button>
+			</div>
 		{/if}
 	</div>
 {/if}
@@ -78,6 +82,12 @@
 		padding: 10px;
 		border-radius: 3px;
 		z-index: 1000;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navbar-item {
+		padding: 10px;
 	}
 
 	.profile-button {
@@ -87,8 +97,8 @@
 		color: white;
 		cursor: pointer;
 	}
-	.profile-button span {
-		margin-right: 5px;
+	.email {
+		color: white;
 	}
 	.icon {
 		display: inline-block;
