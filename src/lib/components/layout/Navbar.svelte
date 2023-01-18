@@ -2,7 +2,7 @@
 	import { authService } from '$lib/services/authService';
 	import type { User } from 'firebase/auth';
 	import FaUserCircle from 'svelte-icons/fa/FaUserCircle.svelte';
-	let isProfileMenuVisible = true;
+	let isProfileMenuVisible = false;
 
 	function toggleProfileMenu() {
 		isProfileMenuVisible = !isProfileMenuVisible;

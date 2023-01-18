@@ -5,16 +5,14 @@
 	import ModeTile from './ModeTile.svelte';
 
 	export let match: GameMatch;
-	$: map = library.getMap(match.mapId) as GameMap;
-	$: mode = library.getMode(match.modeId) as GameMode;
 </script>
 
 <div class="container">
 	<div class="mode">
-		<ModeTile {mode} />
+		<ModeTile mode={match.mode} />
 	</div>
 	<div class="map">
-		<MapTile {map} />
+		<MapTile map={match.map} showInfo={false} />
 	</div>
 </div>
 

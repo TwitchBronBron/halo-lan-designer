@@ -56,22 +56,27 @@ export class Db {
 
     public observeEvent(id: string, callback: (data: GamingEvent) => void) {
         return this.observe<GamingEvent>('events', where(documentId(), '==', id), (events) => {
+            this.hydrateMatches(events);
             callback(events[0]);
         });
     }
 
     public observeEvents(callback: (data: GamingEvent[]) => void) {
         return this.observe<GamingEvent>('events', where('ownerId', '==', this.authService.user?.uid), (events) => {
-            //hydrate match info
-            for (const event of events ?? []) {
-                event.matches = ((event.matches ?? []) as unknown as GameMatchRaw[]).map((match) => ({
-                    game: library.getGame(match.gameId),
-                    mode: library.getMode(match.modeId),
-                    map: library.getMap(match.mapId)
-                }));
-            }
+            this.hydrateMatches(events);
             callback(events);
         });
+    }
+
+    private hydrateMatches(events: any[]) {
+        //hydrate match info
+        for (const event of events ?? []) {
+            event.matches = ((event.matches ?? []) as unknown as GameMatchRaw[]).map((match) => ({
+                game: library.getGame(match.gameId),
+                mode: library.getMode(match.modeId),
+                map: library.getMap(match.mapId)
+            }));
+        }
     }
 }
 export const db = new Db();

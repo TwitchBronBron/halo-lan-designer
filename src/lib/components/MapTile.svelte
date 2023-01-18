@@ -2,6 +2,7 @@
 	import type { GameMap } from '$lib/library';
 
 	export let map: GameMap;
+	export let showInfo = true;
 </script>
 
 <div class="map">
@@ -9,7 +10,9 @@
 		<div class="title-bar">
 			<div class="title">
 				{map.name}
-				<a class="halopedia-link" href={map.url} target="_blank" rel="noreferrer">&#8505;</a>
+				{#if showInfo}
+					<a class="halopedia-link" href={map.url} target="_blank" rel="noreferrer">&#8505;</a>
+				{/if}
 			</div>
 		</div>
 		<div class="image-container">
@@ -67,7 +70,6 @@
 	.image-container img {
 		width: 100%;
 	}
-
 
 	.halopedia-link {
 		position: absolute;
