@@ -1,5 +1,10 @@
-name: Build and Deploy
-on: [push]
+name: build
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -10,12 +15,12 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@master
         with:
-          node-version: "14.16.1"
+          node-version: "18.11.0"
       - run: |
           npm install
           npm run build
-
       - name: Deploy
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
