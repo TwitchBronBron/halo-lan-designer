@@ -1,6 +1,5 @@
 <script lang="ts">
 	import MatchPicker from '$lib/components/MatchPicker.svelte';
-	import MatchTile from '$lib/components/MatchTile.svelte';
 	import { db, type GamingEvent } from '$lib/db';
 
 	/** @type {import('./$types').PageData} */

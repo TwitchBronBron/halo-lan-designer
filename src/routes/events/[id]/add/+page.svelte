@@ -28,9 +28,9 @@
 
 	async function confirm() {
 		await db.createMatch(data.params.id, {
-			gameId: selectedGame.id,
-			modeId: selectedMode.id,
-			mapId: selectedMap.id
+			game: selectedGame,
+			mode: selectedMode,
+			map: selectedMap
 		});
 		await goto(`/events/${data.params.id}`);
 	}

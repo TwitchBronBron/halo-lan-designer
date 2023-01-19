@@ -32,6 +32,7 @@ export class Db {
         await updateDoc(
             doc(this.db, 'events', eventId),
             {
+                modifiedDate: new Date(),
                 matches: arrayUnion({
                     gameId: match.game.id,
                     modeId: match.mode.id,
@@ -56,21 +57,23 @@ export class Db {
 
     public observeEvent(id: string, callback: (data: GamingEvent) => void) {
         return this.observe<GamingEvent>('events', where(documentId(), '==', id), (events) => {
-            this.hydrateMatches(events);
+            this.normalize(events);
             callback(events[0]);
         });
     }
 
     public observeEvents(callback: (data: GamingEvent[]) => void) {
         return this.observe<GamingEvent>('events', where('ownerId', '==', this.authService.user?.uid), (events) => {
-            this.hydrateMatches(events);
+            this.normalize(events);
             callback(events);
         });
     }
 
-    private hydrateMatches(events: any[]) {
+    private normalize(events: any[]) {
         //hydrate match info
         for (const event of events ?? []) {
+            event.modifiedDate = new Date(event.modifiedDate.seconds);
+            event.createdDate = new Date(event.createdDate.seconds);
             event.matches = ((event.matches ?? []) as unknown as GameMatchRaw[]).map((match) => ({
                 game: library.getGame(match.gameId),
                 mode: library.getMode(match.modeId),
