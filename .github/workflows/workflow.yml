@@ -10,7 +10,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@master
         with:
-          node-version: "14.16.1"
+          node-version: "18.11.0"
       - run: |
           npm install
           npm run build
