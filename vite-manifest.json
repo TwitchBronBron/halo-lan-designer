@@ -1,0 +1,791 @@
+{
+  "src/images/covers/Halo 1 portrait.jpg": {
+    "file": "_app/immutable/assets/Halo 1 portrait-81004029.jpg",
+    "src": "src/images/covers/Halo 1 portrait.jpg"
+  },
+  "src/images/Halo 1/Battle Creek.jpg": {
+    "file": "_app/immutable/assets/Battle Creek-61ce0016.jpg",
+    "src": "src/images/Halo 1/Battle Creek.jpg"
+  },
+  "src/images/Halo 1/Blood Gulch.jpg": {
+    "file": "_app/immutable/assets/Blood Gulch-9e88e9a7.jpg",
+    "src": "src/images/Halo 1/Blood Gulch.jpg"
+  },
+  "src/images/Halo 1/Boarding Action.jpg": {
+    "file": "_app/immutable/assets/Boarding Action-ba205a69.jpg",
+    "src": "src/images/Halo 1/Boarding Action.jpg"
+  },
+  "src/images/Halo 1/Chill Out.jpg": {
+    "file": "_app/immutable/assets/Chill Out-ef19bb6e.jpg",
+    "src": "src/images/Halo 1/Chill Out.jpg"
+  },
+  "src/images/Halo 1/Chiron TL-34.jpg": {
+    "file": "_app/immutable/assets/Chiron TL-34-42a241c1.jpg",
+    "src": "src/images/Halo 1/Chiron TL-34.jpg"
+  },
+  "src/images/Halo 1/Damnation.jpg": {
+    "file": "_app/immutable/assets/Damnation-c3a9e6c4.jpg",
+    "src": "src/images/Halo 1/Damnation.jpg"
+  },
+  "src/images/Halo 1/Danger Canyon.jpg": {
+    "file": "_app/immutable/assets/Danger Canyon-3f1fa2a8.jpg",
+    "src": "src/images/Halo 1/Danger Canyon.jpg"
+  },
+  "src/images/Halo 1/Death Island.jpg": {
+    "file": "_app/immutable/assets/Death Island-f995078c.jpg",
+    "src": "src/images/Halo 1/Death Island.jpg"
+  },
+  "src/images/Halo 1/Derelict.jpg": {
+    "file": "_app/immutable/assets/Derelict-1236ceb0.jpg",
+    "src": "src/images/Halo 1/Derelict.jpg"
+  },
+  "src/images/Halo 1/Gephyrophobia.jpg": {
+    "file": "_app/immutable/assets/Gephyrophobia-163e78b7.jpg",
+    "src": "src/images/Halo 1/Gephyrophobia.jpg"
+  },
+  "src/images/Halo 1/Hang Em High.jpg": {
+    "file": "_app/immutable/assets/Hang Em High-b1943f5b.jpg",
+    "src": "src/images/Halo 1/Hang Em High.jpg"
+  },
+  "src/images/Halo 1/Ice Fields.jpg": {
+    "file": "_app/immutable/assets/Ice Fields-a911addd.jpg",
+    "src": "src/images/Halo 1/Ice Fields.jpg"
+  },
+  "src/images/Halo 1/Infinity.jpg": {
+    "file": "_app/immutable/assets/Infinity-b65b9f12.jpg",
+    "src": "src/images/Halo 1/Infinity.jpg"
+  },
+  "src/images/Halo 1/Longest.jpg": {
+    "file": "_app/immutable/assets/Longest-91ccbc00.jpg",
+    "src": "src/images/Halo 1/Longest.jpg"
+  },
+  "src/images/Halo 1/Prisoner.jpg": {
+    "file": "_app/immutable/assets/Prisoner-812f448e.jpg",
+    "src": "src/images/Halo 1/Prisoner.jpg"
+  },
+  "src/images/Halo 1/Rat Race.jpg": {
+    "file": "_app/immutable/assets/Rat Race-4cd667d1.jpg",
+    "src": "src/images/Halo 1/Rat Race.jpg"
+  },
+  "src/images/Halo 1/Sidewinder.jpg": {
+    "file": "_app/immutable/assets/Sidewinder-c7db7234.jpg",
+    "src": "src/images/Halo 1/Sidewinder.jpg"
+  },
+  "src/images/Halo 1/Timberland.jpg": {
+    "file": "_app/immutable/assets/Timberland-c3d839fc.jpg",
+    "src": "src/images/Halo 1/Timberland.jpg"
+  },
+  "src/images/Halo 1/Wizard.jpg": {
+    "file": "_app/immutable/assets/Wizard-375a3e93.jpg",
+    "src": "src/images/Halo 1/Wizard.jpg"
+  },
+  "src/images/modes/slayer.png": {
+    "file": "_app/immutable/assets/slayer-34f2efbc.png",
+    "src": "src/images/modes/slayer.png"
+  },
+  "src/images/modes/ctf.png": {
+    "file": "_app/immutable/assets/ctf-bf6601c5.png",
+    "src": "src/images/modes/ctf.png"
+  },
+  "src/images/modes/assault.png": {
+    "file": "_app/immutable/assets/assault-b97e2ec2.png",
+    "src": "src/images/modes/assault.png"
+  },
+  "src/images/modes/oddball.png": {
+    "file": "_app/immutable/assets/oddball-e6ff3d44.png",
+    "src": "src/images/modes/oddball.png"
+  },
+  "src/images/modes/king-of-the-hill.png": {
+    "file": "_app/immutable/assets/king-of-the-hill-23e3ac2a.png",
+    "src": "src/images/modes/king-of-the-hill.png"
+  },
+  "src/images/covers/Halo 2 portrait.jpg": {
+    "file": "_app/immutable/assets/Halo 2 portrait-68e8c7fd.jpg",
+    "src": "src/images/covers/Halo 2 portrait.jpg"
+  },
+  "src/images/Halo 2/Ascension.jpg": {
+    "file": "_app/immutable/assets/Ascension-5fe375a1.jpg",
+    "src": "src/images/Halo 2/Ascension.jpg"
+  },
+  "src/images/Halo 2/Backwash.jpg": {
+    "file": "_app/immutable/assets/Backwash-a47d7988.jpg",
+    "src": "src/images/Halo 2/Backwash.jpg"
+  },
+  "src/images/Halo 2/Beaver Creek.jpg": {
+    "file": "_app/immutable/assets/Beaver Creek-17551517.jpg",
+    "src": "src/images/Halo 2/Beaver Creek.jpg"
+  },
+  "src/images/Halo 2/Burial Mounds.jpg": {
+    "file": "_app/immutable/assets/Burial Mounds-199723d0.jpg",
+    "src": "src/images/Halo 2/Burial Mounds.jpg"
+  },
+  "src/images/Halo 2/Coagulation.jpg": {
+    "file": "_app/immutable/assets/Coagulation-63e371f3.jpg",
+    "src": "src/images/Halo 2/Coagulation.jpg"
+  },
+  "src/images/Halo 2/Colossus.jpg": {
+    "file": "_app/immutable/assets/Colossus-c05743f3.jpg",
+    "src": "src/images/Halo 2/Colossus.jpg"
+  },
+  "src/images/Halo 2/Containment.jpg": {
+    "file": "_app/immutable/assets/Containment-e1adc5c5.jpg",
+    "src": "src/images/Halo 2/Containment.jpg"
+  },
+  "src/images/Halo 2/Desolation.jpg": {
+    "file": "_app/immutable/assets/Desolation-6aada9f5.jpg",
+    "src": "src/images/Halo 2/Desolation.jpg"
+  },
+  "src/images/Halo 2/District.jpg": {
+    "file": "_app/immutable/assets/District-a1e388de.jpg",
+    "src": "src/images/Halo 2/District.jpg"
+  },
+  "src/images/Halo 2/Elongation.jpg": {
+    "file": "_app/immutable/assets/Elongation-9a08f743.jpg",
+    "src": "src/images/Halo 2/Elongation.jpg"
+  },
+  "src/images/Halo 2/Foundation.jpg": {
+    "file": "_app/immutable/assets/Foundation-7abde438.jpg",
+    "src": "src/images/Halo 2/Foundation.jpg"
+  },
+  "src/images/Halo 2/Gemini.jpg": {
+    "file": "_app/immutable/assets/Gemini-3b5389ab.jpg",
+    "src": "src/images/Halo 2/Gemini.jpg"
+  },
+  "src/images/Halo 2/Headlong.jpg": {
+    "file": "_app/immutable/assets/Headlong-8187f668.jpg",
+    "src": "src/images/Halo 2/Headlong.jpg"
+  },
+  "src/images/Halo 2/Ivory Tower.jpg": {
+    "file": "_app/immutable/assets/Ivory Tower-487ee971.jpg",
+    "src": "src/images/Halo 2/Ivory Tower.jpg"
+  },
+  "src/images/Halo 2/Lockout.jpg": {
+    "file": "_app/immutable/assets/Lockout-42477257.jpg",
+    "src": "src/images/Halo 2/Lockout.jpg"
+  },
+  "src/images/Halo 2/Midship.jpg": {
+    "file": "_app/immutable/assets/Midship-cc7f4127.jpg",
+    "src": "src/images/Halo 2/Midship.jpg"
+  },
+  "src/images/Halo 2/Relic.jpg": {
+    "file": "_app/immutable/assets/Relic-b144615b.jpg",
+    "src": "src/images/Halo 2/Relic.jpg"
+  },
+  "src/images/Halo 2/Sanctuary.jpg": {
+    "file": "_app/immutable/assets/Sanctuary-9be32607.jpg",
+    "src": "src/images/Halo 2/Sanctuary.jpg"
+  },
+  "src/images/Halo 2/Terminal.jpg": {
+    "file": "_app/immutable/assets/Terminal-92df8a23.jpg",
+    "src": "src/images/Halo 2/Terminal.jpg"
+  },
+  "src/images/Halo 2/Tombstone.jpg": {
+    "file": "_app/immutable/assets/Tombstone-ae676edd.jpg",
+    "src": "src/images/Halo 2/Tombstone.jpg"
+  },
+  "src/images/Halo 2/Turf.jpg": {
+    "file": "_app/immutable/assets/Turf-5bcdfde6.jpg",
+    "src": "src/images/Halo 2/Turf.jpg"
+  },
+  "src/images/Halo 2/Uplift.jpg": {
+    "file": "_app/immutable/assets/Uplift-47d3b871.jpg",
+    "src": "src/images/Halo 2/Uplift.jpg"
+  },
+  "src/images/Halo 2/Warlock.jpg": {
+    "file": "_app/immutable/assets/Warlock-6d8e3976.jpg",
+    "src": "src/images/Halo 2/Warlock.jpg"
+  },
+  "src/images/Halo 2/Waterworks.jpg": {
+    "file": "_app/immutable/assets/Waterworks-d74f035f.jpg",
+    "src": "src/images/Halo 2/Waterworks.jpg"
+  },
+  "src/images/Halo 2/Zanzibar.jpg": {
+    "file": "_app/immutable/assets/Zanzibar-7782fba6.jpg",
+    "src": "src/images/Halo 2/Zanzibar.jpg"
+  },
+  "src/images/modes/juggernaut.png": {
+    "file": "_app/immutable/assets/juggernaut-e474f59b.png",
+    "src": "src/images/modes/juggernaut.png"
+  },
+  "src/images/covers/Halo 2 Anniversary portrait.jpg": {
+    "file": "_app/immutable/assets/Halo 2 Anniversary portrait-beaee551.jpg",
+    "src": "src/images/covers/Halo 2 Anniversary portrait.jpg"
+  },
+  "src/images/Halo 2A/Lockdown.jpg": {
+    "file": "_app/immutable/assets/Lockdown-bdde16b6.jpg",
+    "src": "src/images/Halo 2A/Lockdown.jpg"
+  },
+  "src/images/Halo 2A/Zenith.jpg": {
+    "file": "_app/immutable/assets/Zenith-a7f34f92.jpg",
+    "src": "src/images/Halo 2A/Zenith.jpg"
+  },
+  "src/images/Halo 2A/Stonetown.jpg": {
+    "file": "_app/immutable/assets/Stonetown-2fa4de31.jpg",
+    "src": "src/images/Halo 2A/Stonetown.jpg"
+  },
+  "src/images/Halo 2A/Bloodline.jpg": {
+    "file": "_app/immutable/assets/Bloodline-d862ca5e.jpg",
+    "src": "src/images/Halo 2A/Bloodline.jpg"
+  },
+  "src/images/Halo 2A/Warlord.jpg": {
+    "file": "_app/immutable/assets/Warlord-9c0bb9bd.jpg",
+    "src": "src/images/Halo 2A/Warlord.jpg"
+  },
+  "src/images/Halo 2A/Shrine.jpg": {
+    "file": "_app/immutable/assets/Shrine-e3c9c78c.jpg",
+    "src": "src/images/Halo 2A/Shrine.jpg"
+  },
+  "src/images/Halo 2A/Remnant.jpg": {
+    "file": "_app/immutable/assets/Remnant-14efcf06.jpg",
+    "src": "src/images/Halo 2A/Remnant.jpg"
+  },
+  "src/images/modes/ricochet.png": {
+    "file": "_app/immutable/assets/ricochet-3f45690f.png",
+    "src": "src/images/modes/ricochet.png"
+  },
+  "src/images/covers/Halo 3 portrait.jpg": {
+    "file": "_app/immutable/assets/Halo 3 portrait-a12ec795.jpg",
+    "src": "src/images/covers/Halo 3 portrait.jpg"
+  },
+  "src/images/Halo 3/Assembly.jpg": {
+    "file": "_app/immutable/assets/Assembly-3c2148cf.jpg",
+    "src": "src/images/Halo 3/Assembly.jpg"
+  },
+  "src/images/Halo 3/Avalanche.jpg": {
+    "file": "_app/immutable/assets/Avalanche-c74fa24c.jpg",
+    "src": "src/images/Halo 3/Avalanche.jpg"
+  },
+  "src/images/Halo 3/Blackout.jpg": {
+    "file": "_app/immutable/assets/Blackout-8f24a9fc.jpg",
+    "src": "src/images/Halo 3/Blackout.jpg"
+  },
+  "src/images/Halo 3/Citadel.jpg": {
+    "file": "_app/immutable/assets/Citadel-1216f5f1.jpg",
+    "src": "src/images/Halo 3/Citadel.jpg"
+  },
+  "src/images/Halo 3/Cold Storage.jpg": {
+    "file": "_app/immutable/assets/Cold Storage-694927ce.jpg",
+    "src": "src/images/Halo 3/Cold Storage.jpg"
+  },
+  "src/images/Halo 3/Construct.jpg": {
+    "file": "_app/immutable/assets/Construct-3e158c49.jpg",
+    "src": "src/images/Halo 3/Construct.jpg"
+  },
+  "src/images/Halo 3/Epitaph.jpg": {
+    "file": "_app/immutable/assets/Epitaph-153d8501.jpg",
+    "src": "src/images/Halo 3/Epitaph.jpg"
+  },
+  "src/images/Halo 3/Foundry.jpg": {
+    "file": "_app/immutable/assets/Foundry-82cc5cca.jpg",
+    "src": "src/images/Halo 3/Foundry.jpg"
+  },
+  "src/images/Halo 3/Ghost Town.jpg": {
+    "file": "_app/immutable/assets/Ghost Town-aa5b87c6.jpg",
+    "src": "src/images/Halo 3/Ghost Town.jpg"
+  },
+  "src/images/Halo 3/Guardian.jpg": {
+    "file": "_app/immutable/assets/Guardian-faf226fb.jpg",
+    "src": "src/images/Halo 3/Guardian.jpg"
+  },
+  "src/images/Halo 3/Heretic.jpg": {
+    "file": "_app/immutable/assets/Heretic-3f0b35b1.jpg",
+    "src": "src/images/Halo 3/Heretic.jpg"
+  },
+  "src/images/Halo 3/High Ground.jpg": {
+    "file": "_app/immutable/assets/High Ground-0cb99890.jpg",
+    "src": "src/images/Halo 3/High Ground.jpg"
+  },
+  "src/images/Halo 3/Isolation.jpg": {
+    "file": "_app/immutable/assets/Isolation-6ef002f1.jpg",
+    "src": "src/images/Halo 3/Isolation.jpg"
+  },
+  "src/images/Halo 3/Last Resort.jpg": {
+    "file": "_app/immutable/assets/Last Resort-6367a911.jpg",
+    "src": "src/images/Halo 3/Last Resort.jpg"
+  },
+  "src/images/Halo 3/Longshore.jpg": {
+    "file": "_app/immutable/assets/Longshore-5ae68529.jpg",
+    "src": "src/images/Halo 3/Longshore.jpg"
+  },
+  "src/images/Halo 3/Narrows.jpg": {
+    "file": "_app/immutable/assets/Narrows-7b429620.jpg",
+    "src": "src/images/Halo 3/Narrows.jpg"
+  },
+  "src/images/Halo 3/Orbital.jpg": {
+    "file": "_app/immutable/assets/Orbital-db5377f2.jpg",
+    "src": "src/images/Halo 3/Orbital.jpg"
+  },
+  "src/images/Halo 3/Rats Nest.jpg": {
+    "file": "_app/immutable/assets/Rats Nest-b06e99c5.jpg",
+    "src": "src/images/Halo 3/Rats Nest.jpg"
+  },
+  "src/images/Halo 3/Sandbox.jpg": {
+    "file": "_app/immutable/assets/Sandbox-ee505607.jpg",
+    "src": "src/images/Halo 3/Sandbox.jpg"
+  },
+  "src/images/Halo 3/Sandtrap.jpg": {
+    "file": "_app/immutable/assets/Sandtrap-586c2468.jpg",
+    "src": "src/images/Halo 3/Sandtrap.jpg"
+  },
+  "src/images/Halo 3/Snowbound.jpg": {
+    "file": "_app/immutable/assets/Snowbound-4e352a28.jpg",
+    "src": "src/images/Halo 3/Snowbound.jpg"
+  },
+  "src/images/Halo 3/Standoff.jpg": {
+    "file": "_app/immutable/assets/Standoff-81c779d1.jpg",
+    "src": "src/images/Halo 3/Standoff.jpg"
+  },
+  "src/images/Halo 3/The Pit.jpg": {
+    "file": "_app/immutable/assets/The Pit-2525c9db.jpg",
+    "src": "src/images/Halo 3/The Pit.jpg"
+  },
+  "src/images/Halo 3/Valhalla.jpg": {
+    "file": "_app/immutable/assets/Valhalla-fbba42b1.jpg",
+    "src": "src/images/Halo 3/Valhalla.jpg"
+  },
+  "src/images/modes/infection.png": {
+    "file": "_app/immutable/assets/infection-92995585.png",
+    "src": "src/images/modes/infection.png"
+  },
+  "src/images/covers/Halo 4 portrait.jpg": {
+    "file": "_app/immutable/assets/Halo 4 portrait-a7a26100.jpg",
+    "src": "src/images/covers/Halo 4 portrait.jpg"
+  },
+  "src/images/Halo 4/Abandon.jpg": {
+    "file": "_app/immutable/assets/Abandon-cf8a6401.jpg",
+    "src": "src/images/Halo 4/Abandon.jpg"
+  },
+  "src/images/Halo 4/Adrift.jpg": {
+    "file": "_app/immutable/assets/Adrift-7b492a4e.jpg",
+    "src": "src/images/Halo 4/Adrift.jpg"
+  },
+  "src/images/Halo 4/Complex.jpg": {
+    "file": "_app/immutable/assets/Complex-78a4dcb7.jpg",
+    "src": "src/images/Halo 4/Complex.jpg"
+  },
+  "src/images/Halo 4/Daybreak.jpg": {
+    "file": "_app/immutable/assets/Daybreak-07623719.jpg",
+    "src": "src/images/Halo 4/Daybreak.jpg"
+  },
+  "src/images/Halo 4/Erosion.jpg": {
+    "file": "_app/immutable/assets/Erosion-ae15b4fb.jpg",
+    "src": "src/images/Halo 4/Erosion.jpg"
+  },
+  "src/images/Halo 4/Exile.jpg": {
+    "file": "_app/immutable/assets/Exile-42af0bd9.jpg",
+    "src": "src/images/Halo 4/Exile.jpg"
+  },
+  "src/images/Halo 4/Forge Island.jpg": {
+    "file": "_app/immutable/assets/Forge Island-27d3e1da.jpg",
+    "src": "src/images/Halo 4/Forge Island.jpg"
+  },
+  "src/images/Halo 4/Harvest.jpg": {
+    "file": "_app/immutable/assets/Harvest-b15e9e1c.jpg",
+    "src": "src/images/Halo 4/Harvest.jpg"
+  },
+  "src/images/Halo 4/Haven.jpg": {
+    "file": "_app/immutable/assets/Haven-d7fa1493.jpg",
+    "src": "src/images/Halo 4/Haven.jpg"
+  },
+  "src/images/Halo 4/Impact.jpg": {
+    "file": "_app/immutable/assets/Impact-5cec7020.jpg",
+    "src": "src/images/Halo 4/Impact.jpg"
+  },
+  "src/images/Halo 4/Landfall.jpg": {
+    "file": "_app/immutable/assets/Landfall-9d3fdb70.jpg",
+    "src": "src/images/Halo 4/Landfall.jpg"
+  },
+  "src/images/Halo 4/Longbow.jpg": {
+    "file": "_app/immutable/assets/Longbow-2ac51704.jpg",
+    "src": "src/images/Halo 4/Longbow.jpg"
+  },
+  "src/images/Halo 4/Meltdown.jpg": {
+    "file": "_app/immutable/assets/Meltdown-69367d57.jpg",
+    "src": "src/images/Halo 4/Meltdown.jpg"
+  },
+  "src/images/Halo 4/Monolith.jpg": {
+    "file": "_app/immutable/assets/Monolith-63a5f9f5.jpg",
+    "src": "src/images/Halo 4/Monolith.jpg"
+  },
+  "src/images/Halo 4/Outcast.jpg": {
+    "file": "_app/immutable/assets/Outcast-f6a4209e.jpg",
+    "src": "src/images/Halo 4/Outcast.jpg"
+  },
+  "src/images/Halo 4/Perdition.jpg": {
+    "file": "_app/immutable/assets/Perdition-6afee689.jpg",
+    "src": "src/images/Halo 4/Perdition.jpg"
+  },
+  "src/images/Halo 4/Pitfall.jpg": {
+    "file": "_app/immutable/assets/Pitfall-11322c54.jpg",
+    "src": "src/images/Halo 4/Pitfall.jpg"
+  },
+  "src/images/Halo 4/Ragnarok.jpg": {
+    "file": "_app/immutable/assets/Ragnarok-14e92dc6.jpg",
+    "src": "src/images/Halo 4/Ragnarok.jpg"
+  },
+  "src/images/Halo 4/Ravine.jpg": {
+    "file": "_app/immutable/assets/Ravine-dc4c033d.jpg",
+    "src": "src/images/Halo 4/Ravine.jpg"
+  },
+  "src/images/Halo 4/Shatter.jpg": {
+    "file": "_app/immutable/assets/Shatter-d4333a4c.jpg",
+    "src": "src/images/Halo 4/Shatter.jpg"
+  },
+  "src/images/Halo 4/Skyline.jpg": {
+    "file": "_app/immutable/assets/Skyline-3b592ae6.jpg",
+    "src": "src/images/Halo 4/Skyline.jpg"
+  },
+  "src/images/Halo 4/Solace.jpg": {
+    "file": "_app/immutable/assets/Solace-1e259f66.jpg",
+    "src": "src/images/Halo 4/Solace.jpg"
+  },
+  "src/images/Halo 4/Vertigo.jpg": {
+    "file": "_app/immutable/assets/Vertigo-a00645e9.jpg",
+    "src": "src/images/Halo 4/Vertigo.jpg"
+  },
+  "src/images/Halo 4/Vortex.jpg": {
+    "file": "_app/immutable/assets/Vortex-427ff6ed.jpg",
+    "src": "src/images/Halo 4/Vortex.jpg"
+  },
+  "src/images/Halo 4/Wreckage.jpg": {
+    "file": "_app/immutable/assets/Wreckage-81ba265c.jpg",
+    "src": "src/images/Halo 4/Wreckage.jpg"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-d8cd55e4.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/events/[id]/+layout.css": {
+    "file": "_app/immutable/assets/_layout-3fd23db6.css",
+    "src": "src/routes/events/[id]/+layout.css"
+  },
+  "Grouping.css": {
+    "file": "_app/immutable/assets/Grouping-c3eacd0e.css",
+    "src": "Grouping.css"
+  },
+  "ModeTile.css": {
+    "file": "_app/immutable/assets/ModeTile-59a41df1.css",
+    "src": "ModeTile.css"
+  },
+  "src/routes/events/[id]/add/+page.css": {
+    "file": "_app/immutable/assets/_page-b4d2c9d9.css",
+    "src": "src/routes/events/[id]/add/+page.css"
+  },
+  "_singletons-a077f71d.js": {
+    "file": "_app/immutable/chunks/singletons-a077f71d.js",
+    "imports": [
+      "_index-d7b09e5d.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-562cf9c8.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-be7198af.js",
+      "src/routes/events/[id]/+layout.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-2440b34a.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-b9cb28a1.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/events/[id]/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-c973e017.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-be7198af.js",
+      "src/routes/events/[id]/add/+page.svelte"
+    ]
+  },
+  "src/routes/events/[id]/add/+page.ts": {
+    "file": "_app/immutable/modules/pages/events/_id_/add/_page.ts-28f171a6.js",
+    "src": "src/routes/events/[id]/add/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "__page-be7198af.js"
+    ]
+  },
+  "src/routes/events/[id]/+layout.ts": {
+    "file": "_app/immutable/modules/pages/events/_id_/_layout.ts-f3b4a6ba.js",
+    "src": "src/routes/events/[id]/+layout.ts",
+    "isEntry": true,
+    "imports": [
+      "__layout-be7198af.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-bba21931.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+layout.svelte"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-de1f0adc.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-58746148.js",
+      "_db-cd74a76f.js",
+      "_authService-3ebd3aae.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-d8cd55e4.css"
+    ]
+  },
+  "__page-be7198af.js": {
+    "file": "_app/immutable/chunks/_page-be7198af.js"
+  },
+  "_ModeTile-3233bcaa.js": {
+    "file": "_app/immutable/chunks/ModeTile-3233bcaa.js",
+    "imports": [
+      "_index-58746148.js"
+    ],
+    "css": [
+      "_app/immutable/assets/ModeTile-59a41df1.css"
+    ]
+  },
+  "_index-d7b09e5d.js": {
+    "file": "_app/immutable/chunks/index-d7b09e5d.js",
+    "imports": [
+      "_index-58746148.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-7aae6132.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-58746148.js",
+      "_singletons-a077f71d.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js",
+      ".svelte-kit/generated/nodes/4.js",
+      ".svelte-kit/generated/nodes/5.js"
+    ]
+  },
+  "src/routes/events/[id]/+layout.svelte": {
+    "file": "_app/immutable/components/pages/events/_id_/_layout.svelte-9e9dbab4.js",
+    "src": "src/routes/events/[id]/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-58746148.js",
+      "_db-cd74a76f.js",
+      "_ModeTile-3233bcaa.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-3fd23db6.css"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-feb0df6a.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  "_Grouping-4f011ed7.js": {
+    "file": "_app/immutable/chunks/Grouping-4f011ed7.js",
+    "imports": [
+      "_index-58746148.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Grouping-c3eacd0e.css"
+    ]
+  },
+  "__layout-be7198af.js": {
+    "file": "_app/immutable/chunks/_layout-be7198af.js"
+  },
+  "src/routes/events/[id]/add/+page.svelte": {
+    "file": "_app/immutable/components/pages/events/_id_/add/_page.svelte-7abd7280.js",
+    "src": "src/routes/events/[id]/add/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-58746148.js",
+      "_db-cd74a76f.js",
+      "_ModeTile-3233bcaa.js",
+      "_Grouping-4f011ed7.js",
+      "_singletons-a077f71d.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-b4d2c9d9.css"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-1d080b4f.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-58746148.js",
+      "_singletons-a077f71d.js"
+    ]
+  },
+  "_index-58746148.js": {
+    "file": "_app/immutable/chunks/index-58746148.js"
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-d559f01b.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-58746148.js",
+      "_Grouping-4f011ed7.js",
+      "_db-cd74a76f.js",
+      "_authService-3ebd3aae.js"
+    ]
+  },
+  "src/routes/events/[id]/+page.svelte": {
+    "file": "_app/immutable/components/pages/events/_id_/_page.svelte-93a92ce3.js",
+    "src": "src/routes/events/[id]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-58746148.js",
+      "_db-cd74a76f.js"
+    ]
+  },
+  "_authService-3ebd3aae.js": {
+    "file": "_app/immutable/chunks/authService-3ebd3aae.js",
+    "imports": [
+      "_db-cd74a76f.js",
+      "_index-d7b09e5d.js"
+    ]
+  },
+  "_db-cd74a76f.js": {
+    "file": "_app/immutable/chunks/db-cd74a76f.js",
+    "assets": [
+      "_app/immutable/assets/Halo 1 portrait-81004029.jpg",
+      "_app/immutable/assets/Battle Creek-61ce0016.jpg",
+      "_app/immutable/assets/Blood Gulch-9e88e9a7.jpg",
+      "_app/immutable/assets/Boarding Action-ba205a69.jpg",
+      "_app/immutable/assets/Chill Out-ef19bb6e.jpg",
+      "_app/immutable/assets/Chiron TL-34-42a241c1.jpg",
+      "_app/immutable/assets/Damnation-c3a9e6c4.jpg",
+      "_app/immutable/assets/Danger Canyon-3f1fa2a8.jpg",
+      "_app/immutable/assets/Death Island-f995078c.jpg",
+      "_app/immutable/assets/Derelict-1236ceb0.jpg",
+      "_app/immutable/assets/Gephyrophobia-163e78b7.jpg",
+      "_app/immutable/assets/Hang Em High-b1943f5b.jpg",
+      "_app/immutable/assets/Ice Fields-a911addd.jpg",
+      "_app/immutable/assets/Infinity-b65b9f12.jpg",
+      "_app/immutable/assets/Longest-91ccbc00.jpg",
+      "_app/immutable/assets/Prisoner-812f448e.jpg",
+      "_app/immutable/assets/Rat Race-4cd667d1.jpg",
+      "_app/immutable/assets/Sidewinder-c7db7234.jpg",
+      "_app/immutable/assets/Timberland-c3d839fc.jpg",
+      "_app/immutable/assets/Wizard-375a3e93.jpg",
+      "_app/immutable/assets/slayer-34f2efbc.png",
+      "_app/immutable/assets/ctf-bf6601c5.png",
+      "_app/immutable/assets/assault-b97e2ec2.png",
+      "_app/immutable/assets/oddball-e6ff3d44.png",
+      "_app/immutable/assets/king-of-the-hill-23e3ac2a.png",
+      "_app/immutable/assets/Halo 2 portrait-68e8c7fd.jpg",
+      "_app/immutable/assets/Ascension-5fe375a1.jpg",
+      "_app/immutable/assets/Backwash-a47d7988.jpg",
+      "_app/immutable/assets/Beaver Creek-17551517.jpg",
+      "_app/immutable/assets/Burial Mounds-199723d0.jpg",
+      "_app/immutable/assets/Coagulation-63e371f3.jpg",
+      "_app/immutable/assets/Colossus-c05743f3.jpg",
+      "_app/immutable/assets/Containment-e1adc5c5.jpg",
+      "_app/immutable/assets/Desolation-6aada9f5.jpg",
+      "_app/immutable/assets/District-a1e388de.jpg",
+      "_app/immutable/assets/Elongation-9a08f743.jpg",
+      "_app/immutable/assets/Foundation-7abde438.jpg",
+      "_app/immutable/assets/Gemini-3b5389ab.jpg",
+      "_app/immutable/assets/Headlong-8187f668.jpg",
+      "_app/immutable/assets/Ivory Tower-487ee971.jpg",
+      "_app/immutable/assets/Lockout-42477257.jpg",
+      "_app/immutable/assets/Midship-cc7f4127.jpg",
+      "_app/immutable/assets/Relic-b144615b.jpg",
+      "_app/immutable/assets/Sanctuary-9be32607.jpg",
+      "_app/immutable/assets/Terminal-92df8a23.jpg",
+      "_app/immutable/assets/Tombstone-ae676edd.jpg",
+      "_app/immutable/assets/Turf-5bcdfde6.jpg",
+      "_app/immutable/assets/Uplift-47d3b871.jpg",
+      "_app/immutable/assets/Warlock-6d8e3976.jpg",
+      "_app/immutable/assets/Waterworks-d74f035f.jpg",
+      "_app/immutable/assets/Zanzibar-7782fba6.jpg",
+      "_app/immutable/assets/juggernaut-e474f59b.png",
+      "_app/immutable/assets/Halo 2 Anniversary portrait-beaee551.jpg",
+      "_app/immutable/assets/Lockdown-bdde16b6.jpg",
+      "_app/immutable/assets/Zenith-a7f34f92.jpg",
+      "_app/immutable/assets/Stonetown-2fa4de31.jpg",
+      "_app/immutable/assets/Bloodline-d862ca5e.jpg",
+      "_app/immutable/assets/Warlord-9c0bb9bd.jpg",
+      "_app/immutable/assets/Shrine-e3c9c78c.jpg",
+      "_app/immutable/assets/Remnant-14efcf06.jpg",
+      "_app/immutable/assets/ricochet-3f45690f.png",
+      "_app/immutable/assets/Halo 3 portrait-a12ec795.jpg",
+      "_app/immutable/assets/Assembly-3c2148cf.jpg",
+      "_app/immutable/assets/Avalanche-c74fa24c.jpg",
+      "_app/immutable/assets/Blackout-8f24a9fc.jpg",
+      "_app/immutable/assets/Citadel-1216f5f1.jpg",
+      "_app/immutable/assets/Cold Storage-694927ce.jpg",
+      "_app/immutable/assets/Construct-3e158c49.jpg",
+      "_app/immutable/assets/Epitaph-153d8501.jpg",
+      "_app/immutable/assets/Foundry-82cc5cca.jpg",
+      "_app/immutable/assets/Ghost Town-aa5b87c6.jpg",
+      "_app/immutable/assets/Guardian-faf226fb.jpg",
+      "_app/immutable/assets/Heretic-3f0b35b1.jpg",
+      "_app/immutable/assets/High Ground-0cb99890.jpg",
+      "_app/immutable/assets/Isolation-6ef002f1.jpg",
+      "_app/immutable/assets/Last Resort-6367a911.jpg",
+      "_app/immutable/assets/Longshore-5ae68529.jpg",
+      "_app/immutable/assets/Narrows-7b429620.jpg",
+      "_app/immutable/assets/Orbital-db5377f2.jpg",
+      "_app/immutable/assets/Rats Nest-b06e99c5.jpg",
+      "_app/immutable/assets/Sandbox-ee505607.jpg",
+      "_app/immutable/assets/Sandtrap-586c2468.jpg",
+      "_app/immutable/assets/Snowbound-4e352a28.jpg",
+      "_app/immutable/assets/Standoff-81c779d1.jpg",
+      "_app/immutable/assets/The Pit-2525c9db.jpg",
+      "_app/immutable/assets/Valhalla-fbba42b1.jpg",
+      "_app/immutable/assets/infection-92995585.png",
+      "_app/immutable/assets/Halo 4 portrait-a7a26100.jpg",
+      "_app/immutable/assets/Abandon-cf8a6401.jpg",
+      "_app/immutable/assets/Adrift-7b492a4e.jpg",
+      "_app/immutable/assets/Complex-78a4dcb7.jpg",
+      "_app/immutable/assets/Daybreak-07623719.jpg",
+      "_app/immutable/assets/Erosion-ae15b4fb.jpg",
+      "_app/immutable/assets/Exile-42af0bd9.jpg",
+      "_app/immutable/assets/Forge Island-27d3e1da.jpg",
+      "_app/immutable/assets/Harvest-b15e9e1c.jpg",
+      "_app/immutable/assets/Haven-d7fa1493.jpg",
+      "_app/immutable/assets/Impact-5cec7020.jpg",
+      "_app/immutable/assets/Landfall-9d3fdb70.jpg",
+      "_app/immutable/assets/Longbow-2ac51704.jpg",
+      "_app/immutable/assets/Meltdown-69367d57.jpg",
+      "_app/immutable/assets/Monolith-63a5f9f5.jpg",
+      "_app/immutable/assets/Outcast-f6a4209e.jpg",
+      "_app/immutable/assets/Perdition-6afee689.jpg",
+      "_app/immutable/assets/Pitfall-11322c54.jpg",
+      "_app/immutable/assets/Ragnarok-14e92dc6.jpg",
+      "_app/immutable/assets/Ravine-dc4c033d.jpg",
+      "_app/immutable/assets/Shatter-d4333a4c.jpg",
+      "_app/immutable/assets/Skyline-3b592ae6.jpg",
+      "_app/immutable/assets/Solace-1e259f66.jpg",
+      "_app/immutable/assets/Vertigo-a00645e9.jpg",
+      "_app/immutable/assets/Vortex-427ff6ed.jpg",
+      "_app/immutable/assets/Wreckage-81ba265c.jpg"
+    ]
+  }
+}
