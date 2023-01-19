@@ -1,5 +1,10 @@
-name: Build and Deploy
-on: [push]
+name: build
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
