@@ -575,8 +575,8 @@ class Library {
                     maxPlayers: 12
                 }, {
                     name: 'Rat\'s Nest',
-                    url: 'https://www.halopedia.org/Rat%27s_Nest',
-                    imageUrl: new URL('../images/Halo 3/Rat\'s Nest.jpg', import.meta.url).href,
+                    url: 'https://www.halopedia.org/Rats_Nest',
+                    imageUrl: new URL('../images/Halo 3/Rats Nest.jpg', import.meta.url).href,
                     minPlayers: 6,
                     maxPlayers: 16
                 }, {
