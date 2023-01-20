@@ -12,7 +12,7 @@ const config = {
 		}),
 		prerender: { entries: [] },
 		paths: {
-			base: dev ? '' : '/halo-lan-designer'
+			// base: dev ? '' : '/halo-lan-designer'
 		}
 	}
 };
