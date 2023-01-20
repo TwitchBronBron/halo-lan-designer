@@ -5,8 +5,8 @@
 	export let selected = true;
 </script>
 
-<div class="wrapper" class:selected >
-	<div class="game"on:click>
+<div class="wrapper" class:selected>
+	<div class="game" on:click on:keyup>
 		<span class="name">{game.name}</span>
 		<img src={game.imageUrl} alt="{game.name} poster" />
 	</div>
